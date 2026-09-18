@@ -4,6 +4,32 @@
   "graph": {},
   "nodes": [
     {
+      "id": "src_components_bladeforgemodal_anatomypart",
+      "label": "AnatomyPart",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "anatomypart",
+      "source_file": "src/components/BladeForgeModal.tsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "src_components_bladeforgemodal_bladeforgemodalprops",
+      "label": "BladeForgeModalProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "bladeforgemodalprops",
+      "source_file": "src/components/BladeForgeModal.tsx",
+      "source_location": "L16"
+    },
+    {
       "id": "src_components_cinematichud_cinematichudprops",
       "label": "CinematicHUDProps",
       "_callable": true,
@@ -108,32 +134,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_bladeforgemodal_anatomypart",
-      "label": "AnatomyPart",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": "anatomypart",
-      "source_file": "src/components/BladeForgeModal.tsx",
-      "source_location": "L22"
-    },
-    {
-      "id": "src_components_bladeforgemodal_bladeforgemodalprops",
-      "label": "BladeForgeModalProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": "bladeforgemodalprops",
-      "source_file": "src/components/BladeForgeModal.tsx",
-      "source_location": "L16"
-    },
-    {
       "id": "src_webgl_particlesystem_particlesystem",
       "label": "ParticleSystem",
       "_callable": true,
@@ -173,6 +173,19 @@
       "source_location": "L6"
     },
     {
+      "id": "src_webgl_swordmesh_swordmesh",
+      "label": "SwordMesh",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "SwordMesh",
+      "file_type": "code",
+      "norm_label": "swordmesh",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L8"
+    },
+    {
       "id": "src_components_canvasviewport_canvasviewportprops",
       "label": "CanvasViewportProps",
       "_callable": true,
@@ -210,19 +223,6 @@
       "norm_label": "scenemanager",
       "source_file": "src/webgl/SceneManager.ts",
       "source_location": "L11"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh",
-      "label": "SwordMesh",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": "swordmesh",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L8"
     },
     {
       "id": "src_webgl_environment_environment",
@@ -273,6 +273,18 @@
       "norm_label": "audiomotioncontrols()",
       "source_file": "src/components/AudioMotionControls.tsx",
       "source_location": "L7"
+    },
+    {
+      "id": "src_components_bladeforgemodal_bladeforgemodal",
+      "label": "BladeForgeModal()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "bladeforgemodal()",
+      "source_file": "src/components/BladeForgeModal.tsx",
+      "source_location": "L75"
     },
     {
       "id": "src_components_cinematichud_cinematichud",
@@ -419,18 +431,6 @@
       "source_location": "L91"
     },
     {
-      "id": "src_components_bladeforgemodal_bladeforgemodal",
-      "label": "BladeForgeModal()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": "bladeforgemodal()",
-      "source_file": "src/components/BladeForgeModal.tsx",
-      "source_location": "L75"
-    },
-    {
       "id": "src_utils_math_clamp",
       "label": "clamp()",
       "_callable": true,
@@ -551,6 +551,18 @@
       "source_location": "L144"
     },
     {
+      "id": "src_webgl_scenemanager_scenemanager_ondeviceorientation",
+      "label": ".onDeviceOrientation()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "SceneManager.ts",
+      "file_type": "code",
+      "norm_label": ".ondeviceorientation()",
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L278"
+    },
+    {
       "id": "src_webgl_scenemanager_scenemanager_renderloop",
       "label": ".renderLoop()",
       "_callable": true,
@@ -560,7 +572,7 @@
       "file_type": "code",
       "norm_label": ".renderloop()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L278"
+      "source_location": "L381"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_updatecamera",
@@ -572,7 +584,7 @@
       "file_type": "code",
       "norm_label": ".updatecamera()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L202"
+      "source_location": "L304"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_updatefog",
@@ -584,7 +596,7 @@
       "file_type": "code",
       "norm_label": ".updatefog()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L254"
+      "source_location": "L357"
     },
     {
       "id": "src_webgl_shaders_createskydomematerial",
@@ -599,6 +611,18 @@
       "source_location": "L176"
     },
     {
+      "id": "src_webgl_swordmesh_swordmesh_addorbitdrag",
+      "label": ".addOrbitDrag()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "SceneManager.ts",
+      "file_type": "code",
+      "norm_label": ".addorbitdrag()",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L134"
+    },
+    {
       "id": "src_webgl_swordmesh_swordmesh_update",
       "label": ".update()",
       "_callable": true,
@@ -608,7 +632,7 @@
       "file_type": "code",
       "norm_label": ".update()",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L133"
+      "source_location": "L142"
     },
     {
       "id": "src_webgl_textures_createcircularparticletexture",
@@ -645,6 +669,78 @@
       "norm_label": "createcraterdecaltexture()",
       "source_file": "src/webgl/Textures.ts",
       "source_location": "L27"
+    },
+    {
+      "id": "src_webgl_swordmesh_swordmesh_constructor",
+      "label": ".constructor()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "SwordMesh",
+      "file_type": "code",
+      "norm_label": ".constructor()",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L24"
+    },
+    {
+      "id": "src_webgl_swordmesh_swordmesh_loaddaggermodel",
+      "label": ".loadDaggerModel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "SwordMesh",
+      "file_type": "code",
+      "norm_label": ".loaddaggermodel()",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L46"
+    },
+    {
+      "id": "src_webgl_swordmesh_swordmesh_setbladefinish",
+      "label": ".setBladeFinish()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "SwordMesh",
+      "file_type": "code",
+      "norm_label": ".setbladefinish()",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L94"
+    },
+    {
+      "id": "src_webgl_swordmesh_swordmesh_setinspectionmode",
+      "label": ".setInspectionMode()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "SwordMesh",
+      "file_type": "code",
+      "norm_label": ".setinspectionmode()",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L130"
+    },
+    {
+      "id": "src_webgl_swordmesh_swordmesh_setismobile",
+      "label": ".setIsMobile()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "SwordMesh",
+      "file_type": "code",
+      "norm_label": ".setismobile()",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L38"
+    },
+    {
+      "id": "src_webgl_swordmesh_swordmesh_setruneglow",
+      "label": ".setRuneGlow()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "SwordMesh",
+      "file_type": "code",
+      "norm_label": ".setruneglow()",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L126"
     },
     {
       "id": "src_components_canvasviewport_canvasviewport",
@@ -692,7 +788,7 @@
       "file_type": "code",
       "norm_label": ".addorbitdrag()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L156"
+      "source_location": "L177"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_constructor",
@@ -704,7 +800,7 @@
       "file_type": "code",
       "norm_label": ".constructor()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L48"
+      "source_location": "L55"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_destroy",
@@ -716,7 +812,7 @@
       "file_type": "code",
       "norm_label": ".destroy()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L330"
+      "source_location": "L433"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_onmousedown",
@@ -728,7 +824,7 @@
       "file_type": "code",
       "norm_label": ".onmousedown()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L175"
+      "source_location": "L196"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_onmousemove",
@@ -740,7 +836,7 @@
       "file_type": "code",
       "norm_label": ".onmousemove()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L160"
+      "source_location": "L181"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_onmouseup",
@@ -752,7 +848,7 @@
       "file_type": "code",
       "norm_label": ".onmouseup()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L187"
+      "source_location": "L208"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_onresize",
@@ -764,7 +860,43 @@
       "file_type": "code",
       "norm_label": ".onresize()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L193"
+      "source_location": "L288"
+    },
+    {
+      "id": "src_webgl_scenemanager_scenemanager_ontouchend",
+      "label": ".onTouchEnd()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "SceneManager",
+      "file_type": "code",
+      "norm_label": ".ontouchend()",
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L267"
+    },
+    {
+      "id": "src_webgl_scenemanager_scenemanager_ontouchmove",
+      "label": ".onTouchMove()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "SceneManager",
+      "file_type": "code",
+      "norm_label": ".ontouchmove()",
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L238"
+    },
+    {
+      "id": "src_webgl_scenemanager_scenemanager_ontouchstart",
+      "label": ".onTouchStart()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "SceneManager",
+      "file_type": "code",
+      "norm_label": ".ontouchstart()",
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L214"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_onwindowscroll",
@@ -776,7 +908,7 @@
       "file_type": "code",
       "norm_label": ".onwindowscroll()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L140"
+      "source_location": "L161"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_setbladefinish",
@@ -788,7 +920,7 @@
       "file_type": "code",
       "norm_label": ".setbladefinish()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L144"
+      "source_location": "L165"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_setinspectionmode",
@@ -800,7 +932,7 @@
       "file_type": "code",
       "norm_label": ".setinspectionmode()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L152"
+      "source_location": "L173"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_setprogress",
@@ -812,7 +944,7 @@
       "file_type": "code",
       "norm_label": ".setprogress()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L123"
+      "source_location": "L144"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_setreducedmotion",
@@ -824,7 +956,7 @@
       "file_type": "code",
       "norm_label": ".setreducedmotion()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L119"
+      "source_location": "L140"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_setruneglow",
@@ -836,79 +968,7 @@
       "file_type": "code",
       "norm_label": ".setruneglow()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L148"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh_addorbitdrag",
-      "label": ".addOrbitDrag()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": ".addorbitdrag()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L125"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh_constructor",
-      "label": ".constructor()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": ".constructor()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L23"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh_loaddaggermodel",
-      "label": ".loadDaggerModel()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": ".loaddaggermodel()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L37"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh_setbladefinish",
-      "label": ".setBladeFinish()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": ".setbladefinish()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L85"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh_setinspectionmode",
-      "label": ".setInspectionMode()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": ".setinspectionmode()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L121"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh_setruneglow",
-      "label": ".setRuneGlow()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": ".setruneglow()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L117"
+      "source_location": "L169"
     },
     {
       "id": "src_webgl_environment_environment_buildclouds",
@@ -1125,6 +1185,28 @@
       "source_location": "L1"
     },
     {
+      "id": "src_components_bladeforgemodal",
+      "label": "BladeForgeModal.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "bladeforgemodal.tsx",
+      "source_file": "src/components/BladeForgeModal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_bladeforgemodal_anatomy_parts",
+      "label": "ANATOMY_PARTS",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "anatomy_parts",
+      "source_file": "src/components/BladeForgeModal.tsx",
+      "source_location": "L30"
+    },
+    {
       "id": "src_components_cinematichud",
       "label": "CinematicHUD.tsx",
       "_origin": "ast",
@@ -1302,28 +1384,6 @@
       "norm_label": "`/` (root index)",
       "source_file": "PAGES.md",
       "source_location": "L5"
-    },
-    {
-      "id": "src_components_bladeforgemodal",
-      "label": "BladeForgeModal.tsx",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": "bladeforgemodal.tsx",
-      "source_file": "src/components/BladeForgeModal.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_bladeforgemodal_anatomy_parts",
-      "label": "ANATOMY_PARTS",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": "anatomy_parts",
-      "source_file": "src/components/BladeForgeModal.tsx",
-      "source_location": "L30"
     },
     {
       "id": "src_utils_math",
@@ -4110,30 +4170,6 @@
     },
     {
       "source": "src_webgl_scenemanager_scenemanager_constructor",
-      "target": "src_webgl_swordmesh_swordmesh",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L88",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_scenemanager_scenemanager_constructor",
-      "target": "src_webgl_environment_environment",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L91",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_scenemanager_scenemanager_constructor",
       "target": "src_webgl_particlesystem_particlesystem",
       "relation": "calls",
       "_origin": "ast",
@@ -4141,7 +4177,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L94",
+      "source_location": "L101",
       "weight": 1.0
     },
     {
@@ -4153,7 +4189,55 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L97",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "src_webgl_scenemanager_scenemanager_constructor",
+      "target": "src_webgl_scenemanager_scenemanager_onresize",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "src_webgl_scenemanager_scenemanager_constructor",
+      "target": "src_webgl_swordmesh_swordmesh",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "src_webgl_scenemanager_scenemanager_constructor",
+      "target": "src_webgl_environment_environment",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "src_webgl_scenemanager_scenemanager_ondeviceorientation",
+      "target": "src_utils_math_clamp",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L281",
       "weight": 1.0
     },
     {
@@ -4165,7 +4249,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L319",
+      "source_location": "L422",
       "weight": 1.0
     },
     {
@@ -4177,7 +4261,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L322",
+      "source_location": "L425",
       "weight": 1.0
     },
     {
@@ -4189,7 +4273,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L124",
+      "source_location": "L145",
       "weight": 1.0
     },
     {
@@ -4201,7 +4285,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L215",
+      "source_location": "L317",
       "weight": 1.0
     },
     {
@@ -4213,7 +4297,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L216",
+      "source_location": "L318",
       "weight": 1.0
     },
     {
@@ -4225,7 +4309,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L260",
+      "source_location": "L363",
       "weight": 1.0
     },
     {
@@ -4237,7 +4321,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L127",
+      "source_location": "L136",
       "weight": 1.0
     },
     {
@@ -4249,7 +4333,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -4261,7 +4345,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L76",
+      "source_location": "L85",
       "weight": 1.0
     },
     {
@@ -4273,7 +4357,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L154",
+      "source_location": "L163",
       "weight": 1.0
     },
     {
@@ -4285,7 +4369,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L185",
+      "source_location": "L195",
       "weight": 1.0
     },
     {
@@ -5994,7 +6078,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L144",
+      "source_location": "L165",
       "weight": 1.0
     },
     {
@@ -6006,7 +6090,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L148",
+      "source_location": "L169",
       "weight": 1.0
     },
     {
@@ -8592,7 +8676,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L119",
+      "source_location": "L140",
       "weight": 1.0
     },
     {
@@ -8603,7 +8687,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L123",
+      "source_location": "L144",
       "weight": 1.0
     },
     {
@@ -8614,7 +8698,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L140",
+      "source_location": "L161",
       "weight": 1.0
     },
     {
@@ -8625,7 +8709,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L144",
+      "source_location": "L165",
       "weight": 1.0
     },
     {
@@ -8636,7 +8720,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L148",
+      "source_location": "L169",
       "weight": 1.0
     },
     {
@@ -8647,7 +8731,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L152",
+      "source_location": "L173",
       "weight": 1.0
     },
     {
@@ -8658,7 +8742,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L156",
+      "source_location": "L177",
       "weight": 1.0
     },
     {
@@ -8669,7 +8753,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L160",
+      "source_location": "L181",
       "weight": 1.0
     },
     {
@@ -8680,7 +8764,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L175",
+      "source_location": "L196",
       "weight": 1.0
     },
     {
@@ -8691,45 +8775,45 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L187",
+      "source_location": "L208",
       "weight": 1.0
     },
     {
       "source": "src_webgl_scenemanager_scenemanager",
-      "target": "src_webgl_scenemanager_scenemanager_onresize",
+      "target": "src_webgl_scenemanager_scenemanager_ontouchstart",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L193",
+      "source_location": "L214",
       "weight": 1.0
     },
     {
       "source": "src_webgl_scenemanager_scenemanager",
-      "target": "src_webgl_scenemanager_scenemanager_updatecamera",
+      "target": "src_webgl_scenemanager_scenemanager_ontouchmove",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L202",
+      "source_location": "L238",
       "weight": 1.0
     },
     {
       "source": "src_webgl_scenemanager_scenemanager",
-      "target": "src_webgl_scenemanager_scenemanager_updatefog",
+      "target": "src_webgl_scenemanager_scenemanager_ontouchend",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L254",
+      "source_location": "L267",
       "weight": 1.0
     },
     {
       "source": "src_webgl_scenemanager_scenemanager",
-      "target": "src_webgl_scenemanager_scenemanager_renderloop",
+      "target": "src_webgl_scenemanager_scenemanager_ondeviceorientation",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8740,13 +8824,57 @@
     },
     {
       "source": "src_webgl_scenemanager_scenemanager",
+      "target": "src_webgl_scenemanager_scenemanager_onresize",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L288",
+      "weight": 1.0
+    },
+    {
+      "source": "src_webgl_scenemanager_scenemanager",
+      "target": "src_webgl_scenemanager_scenemanager_updatecamera",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L304",
+      "weight": 1.0
+    },
+    {
+      "source": "src_webgl_scenemanager_scenemanager",
+      "target": "src_webgl_scenemanager_scenemanager_updatefog",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L357",
+      "weight": 1.0
+    },
+    {
+      "source": "src_webgl_scenemanager_scenemanager",
+      "target": "src_webgl_scenemanager_scenemanager_renderloop",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L381",
+      "weight": 1.0
+    },
+    {
+      "source": "src_webgl_scenemanager_scenemanager",
       "target": "src_webgl_scenemanager_scenemanager_destroy",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L330",
+      "source_location": "L433",
       "weight": 1.0
     },
     {
@@ -8757,7 +8885,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L48",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -8768,7 +8896,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L117",
+      "source_location": "L126",
       "weight": 1.0
     },
     {
@@ -8779,7 +8907,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L121",
+      "source_location": "L130",
       "weight": 1.0
     },
     {
@@ -8790,7 +8918,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L125",
+      "source_location": "L134",
       "weight": 1.0
     },
     {
@@ -8801,7 +8929,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L133",
+      "source_location": "L142",
       "weight": 1.0
     },
     {
@@ -8812,7 +8940,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L23",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_webgl_swordmesh_swordmesh",
+      "target": "src_webgl_swordmesh_swordmesh_setismobile",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -8823,7 +8962,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L37",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
@@ -8834,7 +8973,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L85",
+      "source_location": "L94",
       "weight": 1.0
     },
     {
@@ -8935,5 +9074,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "533ca781474798fe55d66a397fac56b59805c545"
+  "built_at_commit": "1b375da74a5b08cec3db79b8fb1f9e88c1f230f2"
 }

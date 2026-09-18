@@ -30,9 +30,9 @@
     "semantic_hash": ""
   },
   "src/components/FinalCTA.tsx": {
-    "mtime": 1789743637.2766318,
-    "seen": 1789743762.8445292,
-    "ast_hash": "00d2a0feedc9e8eff7b0b5034af176d7",
+    "mtime": 1789756840.6278126,
+    "seen": 1789756926.8591702,
+    "ast_hash": "04e3f6d926441555a78c1ae2b013333e",
     "semantic_hash": ""
   },
   "src/components/NarrativeOverlay.tsx": {
@@ -96,9 +96,9 @@
     "semantic_hash": ""
   },
   "src/webgl/SceneManager.ts": {
-    "mtime": 1789756570.9037073,
-    "seen": 1789756612.6247225,
-    "ast_hash": "e3d819b6b23987f42864ba14ccd9182f",
+    "mtime": 1789756863.7828722,
+    "seen": 1789756926.8591702,
+    "ast_hash": "e59fa10755850c694eb612e0c114e964",
     "semantic_hash": ""
   },
   "src/webgl/Shaders.ts": {

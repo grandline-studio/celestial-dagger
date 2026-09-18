@@ -572,7 +572,7 @@
       "file_type": "code",
       "norm_label": ".renderloop()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L381"
+      "source_location": "L389"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_updatecamera",
@@ -596,7 +596,7 @@
       "file_type": "code",
       "norm_label": ".updatefog()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L357"
+      "source_location": "L365"
     },
     {
       "id": "src_webgl_shaders_createskydomematerial",
@@ -812,7 +812,7 @@
       "file_type": "code",
       "norm_label": ".destroy()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L433"
+      "source_location": "L441"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_onmousedown",
@@ -4249,7 +4249,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L422",
+      "source_location": "L430",
       "weight": 1.0
     },
     {
@@ -4261,7 +4261,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L425",
+      "source_location": "L433",
       "weight": 1.0
     },
     {
@@ -4309,7 +4309,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L363",
+      "source_location": "L371",
       "weight": 1.0
     },
     {
@@ -8852,7 +8852,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L357",
+      "source_location": "L365",
       "weight": 1.0
     },
     {
@@ -8863,7 +8863,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L381",
+      "source_location": "L389",
       "weight": 1.0
     },
     {
@@ -8874,7 +8874,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L433",
+      "source_location": "L441",
       "weight": 1.0
     },
     {
@@ -9074,5 +9074,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1b375da74a5b08cec3db79b8fb1f9e88c1f230f2"
+  "built_at_commit": "55ed84c42589cff4b4aafba30b2cc792a274ba4b"
 }

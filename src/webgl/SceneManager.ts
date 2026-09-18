@@ -339,9 +339,17 @@ export class SceneManager {
     } else {
       // Impact & Settled state: low ground angle looking up at embedded blade
       const t = smoothstep(0.97, 1.0, this.progress);
-      targetY = mapRange(t, 0, 1, -1.3, -1.55);
-      targetZ = mapRange(t, 0, 1, 4.8, 4.2);
-      lookAtY = mapRange(t, 0, 1, -2.0, -2.15);
+      if (this.isMobile) {
+        // On mobile, frame the embedded blade higher up with wide perspective so the entire hilt,
+        // crossguard, and bedrock impact fracture lines stay above the final CTA drawer
+        targetY = mapRange(t, 0, 1, -1.0, -1.15);
+        targetZ = mapRange(t, 0, 1, 4.8, 4.6);
+        lookAtY = mapRange(t, 0, 1, -1.8, -1.72);
+      } else {
+        targetY = mapRange(t, 0, 1, -1.3, -1.55);
+        targetZ = mapRange(t, 0, 1, 4.8, 4.2);
+        lookAtY = mapRange(t, 0, 1, -2.0, -2.15);
+      }
     }
 
     // Subtle breath oscillation when not impacted
@@ -350,7 +358,7 @@ export class SceneManager {
     this.camera.position.y = targetY + breath + this.mouse.y * 0.2;
     this.camera.position.z = targetZ;
 
-    const mobileLookOffset = this.isMobile ? -0.22 : 0.0;
+    const mobileLookOffset = (this.isMobile && this.progress < 0.97) ? -0.22 : 0.0;
     this.camera.lookAt(0, lookAtY + mobileLookOffset, 0);
   }
 
