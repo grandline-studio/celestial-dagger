@@ -108,17 +108,30 @@
       "source_location": "L1"
     },
     {
-      "id": "src_webgl_lightingrig_lightingrig",
-      "label": "LightingRig",
+      "id": "src_components_bladeforgemodal_anatomypart",
+      "label": "AnatomyPart",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
       "community_name": "SceneManager.ts",
       "file_type": "code",
-      "norm_label": "lightingrig",
-      "source_file": "src/webgl/LightingRig.ts",
-      "source_location": "L4"
+      "norm_label": "anatomypart",
+      "source_file": "src/components/BladeForgeModal.tsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "src_components_bladeforgemodal_bladeforgemodalprops",
+      "label": "BladeForgeModalProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "SceneManager.ts",
+      "file_type": "code",
+      "norm_label": "bladeforgemodalprops",
+      "source_file": "src/components/BladeForgeModal.tsx",
+      "source_location": "L16"
     },
     {
       "id": "src_webgl_particlesystem_particlesystem",
@@ -144,7 +157,7 @@
       "file_type": "code",
       "norm_label": "bladefinishtype",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L6"
+      "source_location": "L5"
     },
     {
       "id": "src_webgl_swordmesh_runeglowtype",
@@ -157,46 +170,7 @@
       "file_type": "code",
       "norm_label": "runeglowtype",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L7"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh",
-      "label": "SwordMesh",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": "swordmesh",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L9"
-    },
-    {
-      "id": "src_components_bladeforgemodal_anatomypart",
-      "label": "AnatomyPart",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": "anatomypart",
-      "source_file": "src/components/BladeForgeModal.tsx",
-      "source_location": "L22"
-    },
-    {
-      "id": "src_components_bladeforgemodal_bladeforgemodalprops",
-      "label": "BladeForgeModalProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": "bladeforgemodalprops",
-      "source_file": "src/components/BladeForgeModal.tsx",
-      "source_location": "L16"
+      "source_location": "L6"
     },
     {
       "id": "src_components_canvasviewport_canvasviewportprops",
@@ -212,6 +186,19 @@
       "source_location": "L5"
     },
     {
+      "id": "src_webgl_lightingrig_lightingrig",
+      "label": "LightingRig",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "SceneManager",
+      "file_type": "code",
+      "norm_label": "lightingrig",
+      "source_file": "src/webgl/LightingRig.ts",
+      "source_location": "L4"
+    },
+    {
       "id": "src_webgl_scenemanager_scenemanager",
       "label": "SceneManager",
       "_callable": true,
@@ -223,6 +210,19 @@
       "norm_label": "scenemanager",
       "source_file": "src/webgl/SceneManager.ts",
       "source_location": "L11"
+    },
+    {
+      "id": "src_webgl_swordmesh_swordmesh",
+      "label": "SwordMesh",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "SceneManager",
+      "file_type": "code",
+      "norm_label": "swordmesh",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L8"
     },
     {
       "id": "src_webgl_environment_environment",
@@ -419,6 +419,18 @@
       "source_location": "L91"
     },
     {
+      "id": "src_components_bladeforgemodal_bladeforgemodal",
+      "label": "BladeForgeModal()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "SceneManager.ts",
+      "file_type": "code",
+      "norm_label": "bladeforgemodal()",
+      "source_file": "src/components/BladeForgeModal.tsx",
+      "source_location": "L75"
+    },
+    {
       "id": "src_utils_math_clamp",
       "label": "clamp()",
       "_callable": true,
@@ -443,6 +455,18 @@
       "source_location": "L11"
     },
     {
+      "id": "src_utils_math_maprange",
+      "label": "mapRange()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "SceneManager.ts",
+      "file_type": "code",
+      "norm_label": "maprange()",
+      "source_file": "src/utils/math.ts",
+      "source_location": "L26"
+    },
+    {
       "id": "src_utils_math_smoothstep",
       "label": "smoothstep()",
       "_callable": true,
@@ -455,19 +479,7 @@
       "source_location": "L18"
     },
     {
-      "id": "src_webgl_lightingrig_lightingrig_constructor",
-      "label": ".constructor()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": ".constructor()",
-      "source_file": "src/webgl/LightingRig.ts",
-      "source_location": "L23"
-    },
-    {
-      "id": "src_webgl_lightingrig_lightingrig_update",
+      "id": "src_webgl_environment_environment_update",
       "label": ".update()",
       "_callable": true,
       "_origin": "ast",
@@ -475,8 +487,8 @@
       "community_name": "SceneManager.ts",
       "file_type": "code",
       "norm_label": ".update()",
-      "source_file": "src/webgl/LightingRig.ts",
-      "source_location": "L60"
+      "source_file": "src/webgl/Environment.ts",
+      "source_location": "L368"
     },
     {
       "id": "src_webgl_particlesystem_particlesystem_buildambientparticles",
@@ -539,16 +551,40 @@
       "source_location": "L144"
     },
     {
-      "id": "src_webgl_scenemanager_scenemanager_constructor",
-      "label": ".constructor()",
+      "id": "src_webgl_scenemanager_scenemanager_renderloop",
+      "label": ".renderLoop()",
       "_callable": true,
       "_origin": "ast",
       "community": 1,
       "community_name": "SceneManager.ts",
       "file_type": "code",
-      "norm_label": ".constructor()",
+      "norm_label": ".renderloop()",
       "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L48"
+      "source_location": "L278"
+    },
+    {
+      "id": "src_webgl_scenemanager_scenemanager_updatecamera",
+      "label": ".updateCamera()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "SceneManager.ts",
+      "file_type": "code",
+      "norm_label": ".updatecamera()",
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L202"
+    },
+    {
+      "id": "src_webgl_scenemanager_scenemanager_updatefog",
+      "label": ".updateFog()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "SceneManager.ts",
+      "file_type": "code",
+      "norm_label": ".updatefog()",
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L254"
     },
     {
       "id": "src_webgl_shaders_createskydomematerial",
@@ -563,114 +599,6 @@
       "source_location": "L176"
     },
     {
-      "id": "src_webgl_swordmesh_swordmesh_addorbitdrag",
-      "label": ".addOrbitDrag()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": ".addorbitdrag()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L327"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh_buildblade",
-      "label": ".buildBlade()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": ".buildblade()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L112"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh_buildcrossguard",
-      "label": ".buildCrossguard()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": ".buildcrossguard()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L211"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh_buildgripandpommel",
-      "label": ".buildGripAndPommel()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": ".buildgripandpommel()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L244"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh_constructor",
-      "label": ".constructor()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": ".constructor()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L40"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh_loaddaggermodel",
-      "label": ".loadDaggerModel()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": ".loaddaggermodel()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L64"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh_setbladefinish",
-      "label": ".setBladeFinish()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": ".setbladefinish()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L287"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh_setinspectionmode",
-      "label": ".setInspectionMode()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": ".setinspectionmode()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L323"
-    },
-    {
-      "id": "src_webgl_swordmesh_swordmesh_setruneglow",
-      "label": ".setRuneGlow()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": ".setruneglow()",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L319"
-    },
-    {
       "id": "src_webgl_swordmesh_swordmesh_update",
       "label": ".update()",
       "_callable": true,
@@ -680,7 +608,7 @@
       "file_type": "code",
       "norm_label": ".update()",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L335"
+      "source_location": "L133"
     },
     {
       "id": "src_webgl_textures_createcircularparticletexture",
@@ -692,7 +620,7 @@
       "file_type": "code",
       "norm_label": "createcircularparticletexture()",
       "source_file": "src/webgl/Textures.ts",
-      "source_location": "L154"
+      "source_location": "L71"
     },
     {
       "id": "src_webgl_textures_createcloudpufftexture",
@@ -704,7 +632,7 @@
       "file_type": "code",
       "norm_label": "createcloudpufftexture()",
       "source_file": "src/webgl/Textures.ts",
-      "source_location": "L51"
+      "source_location": "L8"
     },
     {
       "id": "src_webgl_textures_createcraterdecaltexture",
@@ -716,43 +644,7 @@
       "file_type": "code",
       "norm_label": "createcraterdecaltexture()",
       "source_file": "src/webgl/Textures.ts",
-      "source_location": "L110"
-    },
-    {
-      "id": "src_webgl_textures_createdamascuspatterntexture",
-      "label": "createDamascusPatternTexture()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": "createdamascuspatterntexture()",
-      "source_file": "src/webgl/Textures.ts",
-      "source_location": "L8"
-    },
-    {
-      "id": "src_webgl_textures_createruneemissivetexture",
-      "label": "createRuneEmissiveTexture()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": "createruneemissivetexture()",
-      "source_file": "src/webgl/Textures.ts",
-      "source_location": "L70"
-    },
-    {
-      "id": "src_components_bladeforgemodal_bladeforgemodal",
-      "label": "BladeForgeModal()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": "bladeforgemodal()",
-      "source_file": "src/components/BladeForgeModal.tsx",
-      "source_location": "L75"
+      "source_location": "L27"
     },
     {
       "id": "src_components_canvasviewport_canvasviewport",
@@ -767,19 +659,19 @@
       "source_location": "L10"
     },
     {
-      "id": "src_utils_math_maprange",
-      "label": "mapRange()",
+      "id": "src_webgl_lightingrig_lightingrig_constructor",
+      "label": ".constructor()",
       "_callable": true,
       "_origin": "ast",
       "community": 3,
       "community_name": "SceneManager",
       "file_type": "code",
-      "norm_label": "maprange()",
-      "source_file": "src/utils/math.ts",
-      "source_location": "L26"
+      "norm_label": ".constructor()",
+      "source_file": "src/webgl/LightingRig.ts",
+      "source_location": "L23"
     },
     {
-      "id": "src_webgl_environment_environment_update",
+      "id": "src_webgl_lightingrig_lightingrig_update",
       "label": ".update()",
       "_callable": true,
       "_origin": "ast",
@@ -787,8 +679,8 @@
       "community_name": "SceneManager",
       "file_type": "code",
       "norm_label": ".update()",
-      "source_file": "src/webgl/Environment.ts",
-      "source_location": "L368"
+      "source_file": "src/webgl/LightingRig.ts",
+      "source_location": "L60"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_addorbitdrag",
@@ -801,6 +693,18 @@
       "norm_label": ".addorbitdrag()",
       "source_file": "src/webgl/SceneManager.ts",
       "source_location": "L156"
+    },
+    {
+      "id": "src_webgl_scenemanager_scenemanager_constructor",
+      "label": ".constructor()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "SceneManager",
+      "file_type": "code",
+      "norm_label": ".constructor()",
+      "source_file": "src/webgl/SceneManager.ts",
+      "source_location": "L48"
     },
     {
       "id": "src_webgl_scenemanager_scenemanager_destroy",
@@ -875,18 +779,6 @@
       "source_location": "L140"
     },
     {
-      "id": "src_webgl_scenemanager_scenemanager_renderloop",
-      "label": ".renderLoop()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": ".renderloop()",
-      "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L278"
-    },
-    {
       "id": "src_webgl_scenemanager_scenemanager_setbladefinish",
       "label": ".setBladeFinish()",
       "_callable": true,
@@ -947,28 +839,76 @@
       "source_location": "L148"
     },
     {
-      "id": "src_webgl_scenemanager_scenemanager_updatecamera",
-      "label": ".updateCamera()",
+      "id": "src_webgl_swordmesh_swordmesh_addorbitdrag",
+      "label": ".addOrbitDrag()",
       "_callable": true,
       "_origin": "ast",
       "community": 3,
       "community_name": "SceneManager",
       "file_type": "code",
-      "norm_label": ".updatecamera()",
-      "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L202"
+      "norm_label": ".addorbitdrag()",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L125"
     },
     {
-      "id": "src_webgl_scenemanager_scenemanager_updatefog",
-      "label": ".updateFog()",
+      "id": "src_webgl_swordmesh_swordmesh_constructor",
+      "label": ".constructor()",
       "_callable": true,
       "_origin": "ast",
       "community": 3,
       "community_name": "SceneManager",
       "file_type": "code",
-      "norm_label": ".updatefog()",
-      "source_file": "src/webgl/SceneManager.ts",
-      "source_location": "L254"
+      "norm_label": ".constructor()",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "src_webgl_swordmesh_swordmesh_loaddaggermodel",
+      "label": ".loadDaggerModel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "SceneManager",
+      "file_type": "code",
+      "norm_label": ".loaddaggermodel()",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "src_webgl_swordmesh_swordmesh_setbladefinish",
+      "label": ".setBladeFinish()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "SceneManager",
+      "file_type": "code",
+      "norm_label": ".setbladefinish()",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L85"
+    },
+    {
+      "id": "src_webgl_swordmesh_swordmesh_setinspectionmode",
+      "label": ".setInspectionMode()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "SceneManager",
+      "file_type": "code",
+      "norm_label": ".setinspectionmode()",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L121"
+    },
+    {
+      "id": "src_webgl_swordmesh_swordmesh_setruneglow",
+      "label": ".setRuneGlow()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "SceneManager",
+      "file_type": "code",
+      "norm_label": ".setruneglow()",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L117"
     },
     {
       "id": "src_webgl_environment_environment_buildclouds",
@@ -1362,6 +1302,28 @@
       "norm_label": "`/` (root index)",
       "source_file": "PAGES.md",
       "source_location": "L5"
+    },
+    {
+      "id": "src_components_bladeforgemodal",
+      "label": "BladeForgeModal.tsx",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "SceneManager.ts",
+      "file_type": "code",
+      "norm_label": "bladeforgemodal.tsx",
+      "source_file": "src/components/BladeForgeModal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_bladeforgemodal_anatomy_parts",
+      "label": "ANATOMY_PARTS",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "SceneManager.ts",
+      "file_type": "code",
+      "norm_label": "anatomy_parts",
+      "source_file": "src/components/BladeForgeModal.tsx",
+      "source_location": "L30"
     },
     {
       "id": "src_utils_math",
@@ -3020,28 +2982,6 @@
       "source_location": "L3"
     },
     {
-      "id": "src_components_bladeforgemodal",
-      "label": "BladeForgeModal.tsx",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": "bladeforgemodal.tsx",
-      "source_file": "src/components/BladeForgeModal.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_bladeforgemodal_anatomy_parts",
-      "label": "ANATOMY_PARTS",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": "anatomy_parts",
-      "source_file": "src/components/BladeForgeModal.tsx",
-      "source_location": "L30"
-    },
-    {
       "id": "src_components_canvasviewport",
       "label": "CanvasViewport.tsx",
       "_origin": "ast",
@@ -4297,67 +4237,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L329",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_swordmesh_swordmesh_constructor",
-      "target": "src_webgl_textures_createdamascuspatterntexture",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L48",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_swordmesh_swordmesh_constructor",
-      "target": "src_webgl_textures_createruneemissivetexture",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L49",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_swordmesh_swordmesh_constructor",
-      "target": "src_webgl_swordmesh_swordmesh_buildblade",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L52",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_swordmesh_swordmesh_constructor",
-      "target": "src_webgl_swordmesh_swordmesh_buildcrossguard",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L53",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_swordmesh_swordmesh_constructor",
-      "target": "src_webgl_swordmesh_swordmesh_buildgripandpommel",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L54",
+      "source_location": "L127",
       "weight": 1.0
     },
     {
@@ -4369,7 +4249,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L57",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "src_webgl_swordmesh_swordmesh_loaddaggermodel",
+      "target": "src_webgl_swordmesh_swordmesh_setbladefinish",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
@@ -4381,7 +4273,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L356",
+      "source_location": "L154",
       "weight": 1.0
     },
     {
@@ -4393,7 +4285,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L387",
+      "source_location": "L185",
       "weight": 1.0
     },
     {
@@ -5250,30 +5142,6 @@
     },
     {
       "source": "src_webgl_swordmesh",
-      "target": "src_webgl_textures_createdamascuspatterntexture",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_swordmesh",
-      "target": "src_webgl_textures_createruneemissivetexture",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_swordmesh",
       "target": "src_utils_math_clamp",
       "relation": "imports",
       "_origin": "ast",
@@ -5281,7 +5149,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L4",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -5293,7 +5161,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L4",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -6059,18 +5927,6 @@
     },
     {
       "source": "src_webgl_swordmesh",
-      "target": "src_webgl_textures",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_swordmesh",
       "target": "src_utils_math",
       "relation": "imports_from",
       "_origin": "ast",
@@ -6078,7 +5934,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L4",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -7900,7 +7756,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L6",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -7911,7 +7767,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L7",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -7922,7 +7778,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L9",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -7933,7 +7789,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/Textures.ts",
-      "source_location": "L110",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -7944,34 +7800,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/Textures.ts",
-      "source_location": "L154",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
       "source": "src_webgl_textures",
       "target": "src_webgl_textures_createcloudpufftexture",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/webgl/Textures.ts",
-      "source_location": "L51",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_textures",
-      "target": "src_webgl_textures_createruneemissivetexture",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/webgl/Textures.ts",
-      "source_location": "L70",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_textures",
-      "target": "src_webgl_textures_createdamascuspatterntexture",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8928,57 +8762,13 @@
     },
     {
       "source": "src_webgl_swordmesh_swordmesh",
-      "target": "src_webgl_swordmesh_swordmesh_buildblade",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L112",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_swordmesh_swordmesh",
-      "target": "src_webgl_swordmesh_swordmesh_buildcrossguard",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L211",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_swordmesh_swordmesh",
-      "target": "src_webgl_swordmesh_swordmesh_buildgripandpommel",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L244",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_swordmesh_swordmesh",
-      "target": "src_webgl_swordmesh_swordmesh_setbladefinish",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L287",
-      "weight": 1.0
-    },
-    {
-      "source": "src_webgl_swordmesh_swordmesh",
       "target": "src_webgl_swordmesh_swordmesh_setruneglow",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L319",
+      "source_location": "L117",
       "weight": 1.0
     },
     {
@@ -8989,7 +8779,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L323",
+      "source_location": "L121",
       "weight": 1.0
     },
     {
@@ -9000,7 +8790,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L327",
+      "source_location": "L125",
       "weight": 1.0
     },
     {
@@ -9011,7 +8801,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L335",
+      "source_location": "L133",
       "weight": 1.0
     },
     {
@@ -9022,7 +8812,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L40",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -9033,7 +8823,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L64",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "src_webgl_swordmesh_swordmesh",
+      "target": "src_webgl_swordmesh_swordmesh_setbladefinish",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L85",
       "weight": 1.0
     },
     {
@@ -9133,5 +8934,6 @@
       "weight": 1.0
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "533ca781474798fe55d66a397fac56b59805c545"
 }

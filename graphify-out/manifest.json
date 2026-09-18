@@ -108,15 +108,15 @@
     "semantic_hash": ""
   },
   "src/webgl/SwordMesh.ts": {
-    "mtime": 1789743480.5695179,
-    "seen": 1789743762.8445292,
-    "ast_hash": "1455836d1721f016f1ad534cf120f59d",
+    "mtime": 1789754342.9826667,
+    "seen": 1789755189.280805,
+    "ast_hash": "2b35cefac1068adbf57459ba196cccb2",
     "semantic_hash": ""
   },
   "src/webgl/Textures.ts": {
-    "mtime": 1789744506.1159966,
-    "seen": 1789744764.2271533,
-    "ast_hash": "a4204eb66630caa04e954b9629a78e35",
+    "mtime": 1789754969.5465267,
+    "seen": 1789755189.280805,
+    "ast_hash": "ceb6788cb1734863725b6155b0ae707e",
     "semantic_hash": ""
   },
   "tsconfig.app.json": {
@@ -207,30 +207,6 @@
     "mtime": 1789730726.7396004,
     "seen": 1789736780.7601364,
     "ast_hash": "d1db33410ec736d51a121391793d5cba",
-    "semantic_hash": ""
-  },
-  "fantasy-dagger-meshi-ai-meshy-vs-supavoxel/textures/Color_575ed086-6717-4115-8081-a816837e9489_0.png": {
-    "mtime": 1789736919.0293283,
-    "seen": 1789738245.6744437,
-    "ast_hash": "d72f143dd66939e2f0b0ce9fb10aefd7",
-    "semantic_hash": ""
-  },
-  "fantasy-dagger-meshi-ai-meshy-vs-supavoxel/textures/NormalGL_575ed086-6717-4115-8081-a816837e9489_2.png": {
-    "mtime": 1789736919.0633278,
-    "seen": 1789738245.6744437,
-    "ast_hash": "be532bb089527732e4feb82898d6fbe5",
-    "semantic_hash": ""
-  },
-  "fantasy-dagger-meshi-ai-meshy-vs-supavoxel/textures/ORM_575ed086-6717-4115-8081-a816837e9489_1@channels=B.png": {
-    "mtime": 1789736919.078345,
-    "seen": 1789738245.6744437,
-    "ast_hash": "885e3518ad1dd06060927ace94b607aa",
-    "semantic_hash": ""
-  },
-  "fantasy-dagger-meshi-ai-meshy-vs-supavoxel/textures/ORM_575ed086-6717-4115-8081-a816837e9489_1@channels=G.png": {
-    "mtime": 1789736919.0903516,
-    "seen": 1789738245.6744437,
-    "ast_hash": "4f56fe0312f99944442f712607b4473e",
     "semantic_hash": ""
   },
   "src/components/BladeForgeModal.tsx": {

@@ -1,52 +1,9 @@
 import * as THREE from 'three';
 
 /**
- * Procedural texture generator for Damascus steel, runes, clouds, and impact decals.
+ * Procedural texture generator for celestial clouds, crater decals, and circular particles.
  * Ensures zero asset load latency and instant crisp rendering.
  */
-
-export function createDamascusPatternTexture(): THREE.CanvasTexture {
-  const canvas = document.createElement('canvas');
-  canvas.width = 512;
-  canvas.height = 1024;
-  const ctx = canvas.getContext('2d')!;
-
-  ctx.fillStyle = '#949ba4';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-  // Draw wood-grain-like wavy folded steel layers
-  ctx.lineWidth = 2.5;
-  const numBands = 70;
-  for (let b = 0; b < numBands; b++) {
-    const yStart = (b / numBands) * canvas.height;
-    ctx.strokeStyle = b % 2 === 0 ? 'rgba(45, 48, 55, 0.45)' : 'rgba(235, 240, 248, 0.35)';
-    ctx.beginPath();
-    ctx.moveTo(0, yStart);
-    for (let x = 0; x < canvas.width; x += 15) {
-      const wave1 = Math.sin((x * 0.04) + b * 0.3) * 14;
-      const wave2 = Math.cos((x * 0.08) - b * 0.15) * 6;
-      ctx.lineTo(x, yStart + wave1 + wave2);
-    }
-    ctx.stroke();
-  }
-
-  // Micro surface noise
-  const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-  const data = imgData.data;
-  for (let i = 0; i < data.length; i += 4) {
-    const grain = (Math.random() - 0.5) * 16;
-    data[i] = Math.min(255, Math.max(0, data[i] + grain));
-    data[i + 1] = Math.min(255, Math.max(0, data[i + 1] + grain));
-    data[i + 2] = Math.min(255, Math.max(0, data[i + 2] + grain));
-  }
-  ctx.putImageData(imgData, 0, 0);
-
-  const texture = new THREE.CanvasTexture(canvas);
-  texture.wrapS = THREE.RepeatWrapping;
-  texture.wrapT = THREE.RepeatWrapping;
-  texture.repeat.set(1, 2);
-  return texture;
-}
 
 export function createCloudPuffTexture(): THREE.CanvasTexture {
   const canvas = document.createElement('canvas');
@@ -62,46 +19,6 @@ export function createCloudPuffTexture(): THREE.CanvasTexture {
 
   ctx.fillStyle = gradient;
   ctx.fillRect(0, 0, 256, 256);
-
-  const texture = new THREE.CanvasTexture(canvas);
-  return texture;
-}
-
-export function createRuneEmissiveTexture(): THREE.CanvasTexture {
-  const canvas = document.createElement('canvas');
-  canvas.width = 128;
-  canvas.height = 1024;
-  const ctx = canvas.getContext('2d')!;
-
-  ctx.fillStyle = '#000000';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-  // Draw ancient geometric rune inscriptions down the central fuller
-  ctx.strokeStyle = '#4deeea';
-  ctx.shadowColor = '#00ffff';
-  ctx.shadowBlur = 12;
-  ctx.lineWidth = 4;
-
-  const runes = [
-    '᚛', 'ᚦ', 'ᚨ', 'ᚱ', 'ᚲ', 'ᚷ', 'ᚹ', 'ᚺ', 'ᚾ', 'ᛁ', 'ᛃ', 'ᛈ', 'ᛇ', 'ᛉ', 'ᛋ', 'ᛏ', 'ᛒ', 'ᛖ', 'ᛗ', 'ᛚ'
-  ];
-
-  ctx.font = 'bold 36px "Segoe UI Symbol", "Apple Symbols", sans-serif';
-  ctx.textAlign = 'center';
-  ctx.fillStyle = '#a6ffff';
-
-  const step = canvas.height / (runes.length + 2);
-  for (let i = 0; i < runes.length; i++) {
-    const y = step * (i + 1.5);
-    ctx.fillText(runes[i], 64, y);
-    // Draw interconnecting energy filament lines
-    if (i < runes.length - 1) {
-      ctx.beginPath();
-      ctx.moveTo(64, y + 8);
-      ctx.lineTo(64, y + step - 24);
-      ctx.stroke();
-    }
-  }
 
   const texture = new THREE.CanvasTexture(canvas);
   return texture;

@@ -144,9 +144,9 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1789730718.3969543,
-    "seen": 1789730731.076716,
-    "ast_hash": "d5ffb42396383a2cf50e3814a6f6ec84",
+    "mtime": 1789753272.9057937,
+    "seen": 1789753296.0880282,
+    "ast_hash": "7b72333c77615c85920c90377c678f98",
     "semantic_hash": ""
   },
   "index.html": {
@@ -315,6 +315,18 @@
     "mtime": 1789723589.474045,
     "seen": 1789753016.7272902,
     "ast_hash": "8161d01395fe356fb0795e803dece7c8",
+    "semantic_hash": ""
+  },
+  "assets/brag.jpg": {
+    "mtime": 1789752958.4033573,
+    "seen": 1789753296.0880282,
+    "ast_hash": "bd85f5569e26167b7265a0da90b20528",
+    "semantic_hash": ""
+  },
+  "assets/brag.mp4": {
+    "mtime": 1789752962.5367484,
+    "seen": 1789753296.0880282,
+    "ast_hash": "385c86a14006fc067029cab2b03d6678",
     "semantic_hash": ""
   }
 }

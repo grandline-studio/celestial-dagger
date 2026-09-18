@@ -1,12 +1,12 @@
 # Graph Report - Animated_sword  (2026-09-18)
 
 ## Corpus Check
-- 38 files · ~335,082 words
+- 38 files · ~339,329 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 4 file(s) not represented in the graph (top: .glb 2, (none) 1, .css 1)
+- Unclassified: 5 file(s) not represented in the graph (top: (none) 2, .glb 2, .css 1)
 
 ## Summary
-- 306 nodes · 454 edges · 21 communities (17 shown, 4 thin omitted)
+- 322 nodes · 470 edges · 21 communities (17 shown, 4 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.89)
 - Token cost: 0 input · 0 output
 
@@ -22,7 +22,7 @@
 - Environment
 - SoundEngine
 - .oxlintrc.json
-- THE CELESTIAL DESCENT — Cinematic 3D Scrollytelling
+- 🗡️ THE CELESTIAL BLADE
 - tsconfig.json
 - System Architecture & Data Flow
 - FEATURES.md
@@ -42,8 +42,8 @@
 6. `SwordMesh` - 14 edges
 7. `Brag Plan: Celestial Blade` - 14 edges
 8. `Environment` - 13 edges
-9. `react` - 10 edges
-10. `SoundEngine` - 9 edges
+9. `🗡️ THE CELESTIAL BLADE` - 12 edges
+10. `react` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
 - ``/` (Root Index)` --references--> `AudioMotionControls()`  [INFERRED]
@@ -63,20 +63,20 @@
 ## Communities (21 total, 4 thin omitted)
 
 ### Community 0 - "App.tsx"
-Cohesion: 0.10
-Nodes (20): Page & Route Inventory, `/` (Root Index), ref_gsap_scrolltrigger, lucide-react, react, ref_react_dom_client, App(), AudioMotionControls() (+12 more)
+Cohesion: 0.09
+Nodes (23): Page & Route Inventory, `/` (Root Index), gsap, ref_gsap_scrolltrigger, lucide-react, react, ref_react_dom_client, App() (+15 more)
 
 ### Community 1 - "SceneManager.ts"
 Cohesion: 0.09
-Nodes (18): three, ref_three_examples_jsm_environments_roomenvironment_js, ref_three_examples_jsm_loaders_gltfloader_js, FinalCTA(), FinalCTAProps, clamp(), smoothstep(), LightingRig (+10 more)
+Nodes (18): three, ref_three_examples_jsm_environments_roomenvironment_js, ref_three_examples_jsm_loaders_gltfloader_js, clamp(), smoothstep(), LightingRig, ParticleSystem, createSkyDomeMaterial() (+10 more)
 
 ### Community 2 - "package.json"
 Cohesion: 0.06
-Nodes (33): dependencies, clsx, gsap, lucide-react, react, react-dom, tailwind-merge, three (+25 more)
+Nodes (32): dependencies, clsx, gsap, lucide-react, react, react-dom, tailwind-merge, three (+24 more)
 
 ### Community 3 - "SceneManager"
 Cohesion: 0.10
-Nodes (10): ANATOMY_PARTS, AnatomyPart, BladeForgeModal(), BladeForgeModalProps, CanvasViewport(), CanvasViewportProps, mapRange(), SceneManager (+2 more)
+Nodes (8): ANATOMY_PARTS, AnatomyPart, BladeForgeModal(), BladeForgeModalProps, CanvasViewport(), CanvasViewportProps, mapRange(), SceneManager
 
 ### Community 4 - "compilerOptions"
 Cohesion: 0.10
@@ -98,9 +98,9 @@ Nodes (6): 1. Zero-Rerender Three.js Rendering Pipeline, 2. Continuous Vertical 
 Cohesion: 0.33
 Nodes (5): plugins, rules, react/only-export-components, react/rules-of-hooks, $schema
 
-### Community 11 - "THE CELESTIAL DESCENT — Cinematic 3D Scrollytelling"
-Cohesion: 0.40
-Nodes (4): Key Architecture Highlights, Local Development, Tech Stack, THE CELESTIAL DESCENT — Cinematic 3D Scrollytelling
+### Community 11 - "🗡️ THE CELESTIAL BLADE"
+Cohesion: 0.10
+Nodes (20): 1. 🌌 Procedural Celestial Sky & Shaders, 2. 💨 Delicate Circular Particle Dynamics, 3. ⚒️ The 3D Blade Forge & Metallurgy Customizer, 4. 🎛️ Real-Time Flight Telemetry Cockpit, 5. 🔊 Procedural Web Audio Synthesis, *A Cinematic 60 FPS 3D Scrollytelling Odyssey into the Abyss*, 🤝 Contributing, 📐 Engineering & Architecture Highlights (+12 more)
 
 ### Community 13 - "System Architecture & Data Flow"
 Cohesion: 0.50
@@ -131,24 +131,24 @@ Cohesion: 0.25
 Nodes (7): Commands, Documentation, HyperFrames Composition Project, Key Rules, Linting — ALWAYS RUN AFTER CHANGES, Project Structure, Skills — USE THESE FIRST
 
 ## Knowledge Gaps
-- **147 isolated node(s):** `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components`, `$schema` (+142 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 178 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **161 isolated node(s):** `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components`, `$schema` (+156 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 192 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `SceneManager` connect `SceneManager` to `App.tsx`, `SceneManager.ts`, `Environment`?**
-  _High betweenness centrality (0.065) - this node is a cross-community bridge._
+  _High betweenness centrality (0.059) - this node is a cross-community bridge._
 - **Why does `three` connect `SceneManager.ts` to `package.json`?**
-  _High betweenness centrality (0.062) - this node is a cross-community bridge._
-- **Why does `react` connect `App.tsx` to `SceneManager.ts`, `package.json`, `SceneManager`?**
-  _High betweenness centrality (0.048) - this node is a cross-community bridge._
+  _High betweenness centrality (0.056) - this node is a cross-community bridge._
+- **Why does `react` connect `App.tsx` to `package.json`, `SceneManager`?**
+  _High betweenness centrality (0.043) - this node is a cross-community bridge._
 - **What connects `$schema`, `plugins`, `react/rules-of-hooks` to the rest of the system?**
-  _147 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _161 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `App.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.10128205128205128 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09413067552602436 - nodes in this community are weakly interconnected._
 - **Should `SceneManager.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.09178743961352658 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09494949494949495 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.06050420168067227 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.062388591800356503 - nodes in this community are weakly interconnected._

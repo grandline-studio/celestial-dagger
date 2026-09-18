@@ -1,14 +1,19 @@
 # Graph Report - Animated_sword  (2026-09-18)
 
 ## Corpus Check
-- 38 files · ~339,329 words
+- 38 files · ~29,443 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 5 file(s) not represented in the graph (top: (none) 2, .glb 2, .css 1)
+- Unclassified: 4 file(s) not represented in the graph (top: (none) 2, .glb 1, .css 1)
 
 ## Summary
-- 322 nodes · 470 edges · 21 communities (17 shown, 4 thin omitted)
+- 317 nodes · 458 edges · 21 communities (17 shown, 4 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.89)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `533ca781`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - App.tsx
@@ -39,10 +44,10 @@
 3. `animationController` - 17 edges
 4. `smoothstep()` - 16 edges
 5. `compilerOptions` - 15 edges
-6. `SwordMesh` - 14 edges
-7. `Brag Plan: Celestial Blade` - 14 edges
-8. `Environment` - 13 edges
-9. `🗡️ THE CELESTIAL BLADE` - 12 edges
+6. `Brag Plan: Celestial Blade` - 14 edges
+7. `Environment` - 13 edges
+8. `🗡️ THE CELESTIAL BLADE` - 12 edges
+9. `SwordMesh` - 11 edges
 10. `react` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -67,8 +72,8 @@ Cohesion: 0.09
 Nodes (23): Page & Route Inventory, `/` (Root Index), gsap, ref_gsap_scrolltrigger, lucide-react, react, ref_react_dom_client, App() (+15 more)
 
 ### Community 1 - "SceneManager.ts"
-Cohesion: 0.09
-Nodes (18): three, ref_three_examples_jsm_environments_roomenvironment_js, ref_three_examples_jsm_loaders_gltfloader_js, clamp(), smoothstep(), LightingRig, ParticleSystem, createSkyDomeMaterial() (+10 more)
+Cohesion: 0.11
+Nodes (19): three, ref_three_examples_jsm_environments_roomenvironment_js, ref_three_examples_jsm_loaders_gltfloader_js, ANATOMY_PARTS, AnatomyPart, BladeForgeModal(), BladeForgeModalProps, clamp() (+11 more)
 
 ### Community 2 - "package.json"
 Cohesion: 0.06
@@ -76,7 +81,7 @@ Nodes (32): dependencies, clsx, gsap, lucide-react, react, react-dom, tailwind-m
 
 ### Community 3 - "SceneManager"
 Cohesion: 0.10
-Nodes (8): ANATOMY_PARTS, AnatomyPart, BladeForgeModal(), BladeForgeModalProps, CanvasViewport(), CanvasViewportProps, mapRange(), SceneManager
+Nodes (5): CanvasViewport(), CanvasViewportProps, LightingRig, SceneManager, SwordMesh
 
 ### Community 4 - "compilerOptions"
 Cohesion: 0.10
@@ -132,23 +137,23 @@ Nodes (7): Commands, Documentation, HyperFrames Composition Project, Key Rules, 
 
 ## Knowledge Gaps
 - **161 isolated node(s):** `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components`, `$schema` (+156 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 192 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 191 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `SceneManager` connect `SceneManager` to `App.tsx`, `SceneManager.ts`, `Environment`?**
-  _High betweenness centrality (0.059) - this node is a cross-community bridge._
+  _High betweenness centrality (0.058) - this node is a cross-community bridge._
 - **Why does `three` connect `SceneManager.ts` to `package.json`?**
-  _High betweenness centrality (0.056) - this node is a cross-community bridge._
-- **Why does `react` connect `App.tsx` to `package.json`, `SceneManager`?**
-  _High betweenness centrality (0.043) - this node is a cross-community bridge._
+  _High betweenness centrality (0.053) - this node is a cross-community bridge._
+- **Why does `react` connect `App.tsx` to `SceneManager.ts`, `package.json`, `SceneManager`?**
+  _High betweenness centrality (0.044) - this node is a cross-community bridge._
 - **What connects `$schema`, `plugins`, `react/rules-of-hooks` to the rest of the system?**
   _161 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `App.tsx` be split into smaller, more focused modules?**
   _Cohesion score 0.09413067552602436 - nodes in this community are weakly interconnected._
 - **Should `SceneManager.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.09494949494949495 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10931174089068826 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
   _Cohesion score 0.062388591800356503 - nodes in this community are weakly interconnected._

@@ -17,6 +17,19 @@
       "source_location": "L16"
     },
     {
+      "id": "src_components_finalcta_finalctaprops",
+      "label": "FinalCTAProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "finalctaprops",
+      "source_file": "src/components/FinalCTA.tsx",
+      "source_location": "L6"
+    },
+    {
       "id": "src_components_screenshakewrapper_screenshakewrapperprops",
       "label": "ScreenShakeWrapperProps",
       "_callable": true,
@@ -95,19 +108,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_finalcta_finalctaprops",
-      "label": "FinalCTAProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": "finalctaprops",
-      "source_file": "src/components/FinalCTA.tsx",
-      "source_location": "L6"
-    },
-    {
       "id": "src_webgl_lightingrig_lightingrig",
       "label": "LightingRig",
       "_callable": true,
@@ -132,6 +132,32 @@
       "norm_label": "particlesystem",
       "source_file": "src/webgl/ParticleSystem.ts",
       "source_location": "L5"
+    },
+    {
+      "id": "src_webgl_swordmesh_bladefinishtype",
+      "label": "BladeFinishType",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "SceneManager.ts",
+      "file_type": "code",
+      "norm_label": "bladefinishtype",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_webgl_swordmesh_runeglowtype",
+      "label": "RuneGlowType",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "SceneManager.ts",
+      "file_type": "code",
+      "norm_label": "runeglowtype",
+      "source_file": "src/webgl/SwordMesh.ts",
+      "source_location": "L7"
     },
     {
       "id": "src_webgl_swordmesh_swordmesh",
@@ -199,32 +225,6 @@
       "source_location": "L11"
     },
     {
-      "id": "src_webgl_swordmesh_bladefinishtype",
-      "label": "BladeFinishType",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": "bladefinishtype",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "src_webgl_swordmesh_runeglowtype",
-      "label": "RuneGlowType",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "SceneManager",
-      "file_type": "code",
-      "norm_label": "runeglowtype",
-      "source_file": "src/webgl/SwordMesh.ts",
-      "source_location": "L7"
-    },
-    {
       "id": "src_webgl_environment_environment",
       "label": "Environment",
       "_callable": true,
@@ -285,6 +285,18 @@
       "norm_label": "cinematichud()",
       "source_file": "src/components/CinematicHUD.tsx",
       "source_location": "L22"
+    },
+    {
+      "id": "src_components_finalcta_finalcta",
+      "label": "FinalCTA()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "finalcta()",
+      "source_file": "src/components/FinalCTA.tsx",
+      "source_location": "L10"
     },
     {
       "id": "src_components_narrativeoverlay_narrativeoverlay",
@@ -405,18 +417,6 @@
       "norm_label": ".subscribe()",
       "source_file": "src/core/AnimationState.ts",
       "source_location": "L91"
-    },
-    {
-      "id": "src_components_finalcta_finalcta",
-      "label": "FinalCTA()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": "finalcta()",
-      "source_file": "src/components/FinalCTA.tsx",
-      "source_location": "L10"
     },
     {
       "id": "src_utils_math_clamp",
@@ -1185,17 +1185,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_canvasviewport",
-      "label": "CanvasViewport.tsx",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "App.tsx",
-      "file_type": "code",
-      "norm_label": "canvasviewport.tsx",
-      "source_file": "src/components/CanvasViewport.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "src_components_cinematichud",
       "label": "CinematicHUD.tsx",
       "_origin": "ast",
@@ -1204,6 +1193,17 @@
       "file_type": "code",
       "norm_label": "cinematichud.tsx",
       "source_file": "src/components/CinematicHUD.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_finalcta",
+      "label": "FinalCTA.tsx",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "finalcta.tsx",
+      "source_file": "src/components/FinalCTA.tsx",
       "source_location": "L1"
     },
     {
@@ -1295,6 +1295,17 @@
       "source_location": "L281"
     },
     {
+      "id": "ref_gsap",
+      "label": "gsap",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "App.tsx",
+      "file_type": "concept",
+      "norm_label": "gsap",
+      "source_file": "package.json",
+      "source_location": "L14"
+    },
+    {
       "id": "ref_lucide_react",
       "label": "lucide-react",
       "_origin": "ast",
@@ -1351,17 +1362,6 @@
       "norm_label": "`/` (root index)",
       "source_file": "PAGES.md",
       "source_location": "L5"
-    },
-    {
-      "id": "src_components_finalcta",
-      "label": "FinalCTA.tsx",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "SceneManager.ts",
-      "file_type": "code",
-      "norm_label": "finalcta.tsx",
-      "source_file": "src/components/FinalCTA.tsx",
-      "source_location": "L1"
     },
     {
       "id": "src_utils_math",
@@ -1555,7 +1555,7 @@
       "label": "README.md",
       "_origin": "ast",
       "community": 11,
-      "community_name": "THE CELESTIAL DESCENT \u2014 Cinematic 3D Scrollytelling",
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "readme.md",
@@ -1563,52 +1563,244 @@
       "source_location": "L1"
     },
     {
-      "id": "readme_key_architecture_highlights",
-      "label": "Key Architecture Highlights",
+      "id": "readme_1_procedural_celestial_sky_shaders",
+      "label": "1. \ud83c\udf0c Procedural Celestial Sky & Shaders",
       "_origin": "ast",
       "community": 11,
-      "community_name": "THE CELESTIAL DESCENT \u2014 Cinematic 3D Scrollytelling",
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "key architecture highlights",
+      "norm_label": "1. \ud83c\udf0c procedural celestial sky & shaders",
       "source_file": "README.md",
-      "source_location": "L19"
+      "source_location": "L71"
     },
     {
-      "id": "readme_local_development",
-      "label": "Local Development",
+      "id": "readme_2_delicate_circular_particle_dynamics",
+      "label": "2. \ud83d\udca8 Delicate Circular Particle Dynamics",
       "_origin": "ast",
       "community": 11,
-      "community_name": "THE CELESTIAL DESCENT \u2014 Cinematic 3D Scrollytelling",
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "local development",
+      "norm_label": "2. \ud83d\udca8 delicate circular particle dynamics",
       "source_file": "README.md",
-      "source_location": "L33"
+      "source_location": "L76"
     },
     {
-      "id": "readme_tech_stack",
-      "label": "Tech Stack",
+      "id": "readme_3_the_3d_blade_forge_metallurgy_customizer",
+      "label": "3. \u2692\ufe0f The 3D Blade Forge & Metallurgy Customizer",
       "_origin": "ast",
       "community": 11,
-      "community_name": "THE CELESTIAL DESCENT \u2014 Cinematic 3D Scrollytelling",
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "tech stack",
+      "norm_label": "3. \u2692\ufe0f the 3d blade forge & metallurgy customizer",
       "source_file": "README.md",
-      "source_location": "L9"
+      "source_location": "L81"
     },
     {
-      "id": "readme_the_celestial_descent_cinematic_3d_scrollytelling",
-      "label": "THE CELESTIAL DESCENT \u2014 Cinematic 3D Scrollytelling",
+      "id": "readme_4_real_time_flight_telemetry_cockpit",
+      "label": "4. \ud83c\udf9b\ufe0f Real-Time Flight Telemetry Cockpit",
       "_origin": "ast",
       "community": 11,
-      "community_name": "THE CELESTIAL DESCENT \u2014 Cinematic 3D Scrollytelling",
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "the celestial descent \u2014 cinematic 3d scrollytelling",
+      "norm_label": "4. \ud83c\udf9b\ufe0f real-time flight telemetry cockpit",
       "source_file": "README.md",
-      "source_location": "L1"
+      "source_location": "L89"
+    },
+    {
+      "id": "readme_5_procedural_web_audio_synthesis",
+      "label": "5. \ud83d\udd0a Procedural Web Audio Synthesis",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. \ud83d\udd0a procedural web audio synthesis",
+      "source_file": "README.md",
+      "source_location": "L93"
+    },
+    {
+      "id": "readme_a_cinematic_60_fps_3d_scrollytelling_odyssey_into_the_abyss",
+      "label": "*A Cinematic 60 FPS 3D Scrollytelling Odyssey into the Abyss*",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "*a cinematic 60 fps 3d scrollytelling odyssey into the abyss*",
+      "source_file": "README.md",
+      "source_location": "L4"
+    },
+    {
+      "id": "readme_contributing",
+      "label": "\ud83e\udd1d Contributing",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83e\udd1d contributing",
+      "source_file": "README.md",
+      "source_location": "L210"
+    },
+    {
+      "id": "readme_engineering_architecture_highlights",
+      "label": "\ud83d\udcd0 Engineering & Architecture Highlights",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udcd0 engineering & architecture highlights",
+      "source_file": "README.md",
+      "source_location": "L100"
+    },
+    {
+      "id": "readme_how_to_reach_multiple_users_on_github_growth_playbook",
+      "label": "\ud83c\udf1f How to Reach Multiple Users on GitHub (Growth Playbook)",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83c\udf1f how to reach multiple users on github (growth playbook)",
+      "source_file": "README.md",
+      "source_location": "L193"
+    },
+    {
+      "id": "readme_installation_run",
+      "label": "Installation & Run",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "installation & run",
+      "source_file": "README.md",
+      "source_location": "L143"
+    },
+    {
+      "id": "readme_interactive_controls",
+      "label": "\ud83c\udfae Interactive Controls",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83c\udfae interactive controls",
+      "source_file": "README.md",
+      "source_location": "L56"
+    },
+    {
+      "id": "readme_key_features",
+      "label": "\u2728 Key Features",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u2728 key features",
+      "source_file": "README.md",
+      "source_location": "L69"
+    },
+    {
+      "id": "readme_launch_video_generation_hyperframes",
+      "label": "\ud83c\udfac Launch Video Generation (`Hyperframes`)",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83c\udfac launch video generation (`hyperframes`)",
+      "source_file": "README.md",
+      "source_location": "L176"
+    },
+    {
+      "id": "readme_license",
+      "label": "\ud83d\udcdc License",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udcdc license",
+      "source_file": "README.md",
+      "source_location": "L217"
+    },
+    {
+      "id": "readme_local_quickstart",
+      "label": "\ud83d\ude80 Local Quickstart",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\ude80 local quickstart",
+      "source_file": "README.md",
+      "source_location": "L137"
+    },
+    {
+      "id": "readme_overview",
+      "label": "\ud83c\udf0c Overview",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83c\udf0c overview",
+      "source_file": "README.md",
+      "source_location": "L35"
+    },
+    {
+      "id": "readme_prerequisites",
+      "label": "Prerequisites",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "prerequisites",
+      "source_file": "README.md",
+      "source_location": "L139"
+    },
+    {
+      "id": "readme_production_build_linting",
+      "label": "Production Build & Linting",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "production build & linting",
+      "source_file": "README.md",
+      "source_location": "L161"
+    },
+    {
+      "id": "readme_the_celestial_blade",
+      "label": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udde1\ufe0f the celestial blade",
+      "source_file": "README.md",
+      "source_location": "L3"
+    },
+    {
+      "id": "readme_the_inspiration",
+      "label": "\ud83d\udca1 The Inspiration",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "\ud83d\udde1\ufe0f THE CELESTIAL BLADE",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\ud83d\udca1 the inspiration",
+      "source_file": "README.md",
+      "source_location": "L43"
     },
     {
       "id": "tsconfig",
@@ -2589,17 +2781,6 @@
       "source_location": "L13"
     },
     {
-      "id": "ref_gsap",
-      "label": "gsap",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "concept",
-      "norm_label": "gsap",
-      "source_file": "package.json",
-      "source_location": "L14"
-    },
-    {
       "id": "ref_oxlint",
       "label": "oxlint",
       "_origin": "ast",
@@ -2859,6 +3040,17 @@
       "norm_label": "anatomy_parts",
       "source_file": "src/components/BladeForgeModal.tsx",
       "source_location": "L30"
+    },
+    {
+      "id": "src_components_canvasviewport",
+      "label": "CanvasViewport.tsx",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "SceneManager",
+      "file_type": "code",
+      "norm_label": "canvasviewport.tsx",
+      "source_file": "src/components/CanvasViewport.tsx",
+      "source_location": "L1"
     },
     {
       "id": "tsconfig_app",
@@ -7119,46 +7311,222 @@
     },
     {
       "source": "readme",
-      "target": "readme_the_celestial_descent_cinematic_3d_scrollytelling",
+      "target": "readme_the_celestial_blade",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L1",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
-      "source": "readme_the_celestial_descent_cinematic_3d_scrollytelling",
-      "target": "readme_key_architecture_highlights",
+      "source": "readme_key_features",
+      "target": "readme_1_procedural_celestial_sky_shaders",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L19",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
-      "source": "readme_the_celestial_descent_cinematic_3d_scrollytelling",
-      "target": "readme_local_development",
+      "source": "readme_key_features",
+      "target": "readme_2_delicate_circular_particle_dynamics",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L33",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
-      "source": "readme_the_celestial_descent_cinematic_3d_scrollytelling",
-      "target": "readme_tech_stack",
+      "source": "readme_key_features",
+      "target": "readme_3_the_3d_blade_forge_metallurgy_customizer",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L9",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_key_features",
+      "target": "readme_4_real_time_flight_telemetry_cockpit",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L89",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_key_features",
+      "target": "readme_5_procedural_web_audio_synthesis",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_local_quickstart",
+      "target": "readme_prerequisites",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L139",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_local_quickstart",
+      "target": "readme_installation_run",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L143",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_local_quickstart",
+      "target": "readme_production_build_linting",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L161",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_the_celestial_blade",
+      "target": "readme_engineering_architecture_highlights",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_the_celestial_blade",
+      "target": "readme_local_quickstart",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L137",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_the_celestial_blade",
+      "target": "readme_launch_video_generation_hyperframes",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_the_celestial_blade",
+      "target": "readme_how_to_reach_multiple_users_on_github_growth_playbook",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L193",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_the_celestial_blade",
+      "target": "readme_contributing",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L210",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_the_celestial_blade",
+      "target": "readme_license",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L217",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_the_celestial_blade",
+      "target": "readme_overview",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_the_celestial_blade",
+      "target": "readme_a_cinematic_60_fps_3d_scrollytelling_odyssey_into_the_abyss",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_the_celestial_blade",
+      "target": "readme_the_inspiration",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_the_celestial_blade",
+      "target": "readme_interactive_controls",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_the_celestial_blade",
+      "target": "readme_key_features",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
