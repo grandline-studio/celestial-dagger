@@ -18,6 +18,7 @@ export class SwordMesh {
   public currentFinish: BladeFinishType = 'damascus';
   public currentRuneGlow: RuneGlowType = 'cyan';
   public isInspecting = false;
+  public isMobile = false;
   private orbitRotation = { x: 0, y: 0 };
 
   constructor() {
@@ -32,6 +33,14 @@ export class SwordMesh {
     // Default orientation: points down along -Y
     this.group.rotation.x = 0;
     this.group.position.set(0, 0, 0);
+  }
+
+  public setIsMobile(val: boolean) {
+    this.isMobile = val;
+    const scale = val ? 1.28 : 1.55;
+    if (this.daggerGroup.children.length > 0) {
+      this.daggerGroup.children[0].scale.set(scale, scale, scale);
+    }
   }
 
   private loadDaggerModel() {
@@ -62,8 +71,8 @@ export class SwordMesh {
         // and the hilt pointing straight UP along +Y
         model.rotation.z = -3.919434 + Math.PI;
 
-        // Scale to cinematic proportions (length ~ 4.2 units)
-        const scale = 1.55;
+        // Scale to cinematic proportions (length ~ 4.2 units, 1.28 on mobile, 1.55 on desktop)
+        const scale = this.isMobile ? 1.28 : 1.55;
         model.scale.set(scale, scale, scale);
 
         // Center crossguard/hilt lower so pommel stays clear of text
@@ -171,7 +180,8 @@ export class SwordMesh {
       const interactivePosX = mouseX * 0.35 * mouseWeight;
 
       // Normal falling hover parameters positioned well below hero text
-      const normalTargetY = -1.55 - progress * 0.45 + (mouseY * 0.18 * mouseWeight);
+      const baseY = this.isMobile ? -1.82 : -1.55;
+      const normalTargetY = baseY - progress * 0.45 + (mouseY * 0.18 * mouseWeight);
       const normalRotX = wobbleX + airDragTilt + interactiveX;
       const normalRotY = baseRotationY + interactiveY;
       const normalRotZ = wobbleZ + interactiveZ;

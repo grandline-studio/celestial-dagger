@@ -36,9 +36,9 @@
     "semantic_hash": ""
   },
   "src/components/NarrativeOverlay.tsx": {
-    "mtime": 1789757489.9513576,
-    "seen": 1789757581.7639189,
-    "ast_hash": "3192fea466e73ff3e127d2e224362fa6",
+    "mtime": 1789757133.3049564,
+    "seen": 1789757195.1490862,
+    "ast_hash": "846595b4e2eec10a49dff4166f247aac",
     "semantic_hash": ""
   },
   "src/components/ScreenShakeWrapper.tsx": {
@@ -96,9 +96,9 @@
     "semantic_hash": ""
   },
   "src/webgl/SceneManager.ts": {
-    "mtime": 1789757446.9273376,
-    "seen": 1789757581.7639189,
-    "ast_hash": "186b77fa1d66d7adb6d93c174f3ff939",
+    "mtime": 1789757133.3059545,
+    "seen": 1789757195.1490862,
+    "ast_hash": "cf1aa19238a61f5d9edd00e8162c0c27",
     "semantic_hash": ""
   },
   "src/webgl/Shaders.ts": {
@@ -108,9 +108,9 @@
     "semantic_hash": ""
   },
   "src/webgl/SwordMesh.ts": {
-    "mtime": 1789757364.8092022,
-    "seen": 1789757581.7639189,
-    "ast_hash": "1555aa244b2ce204c02ee324b0d66a7c",
+    "mtime": 1789757133.3069577,
+    "seen": 1789757195.1490862,
+    "ast_hash": "ac7e9bc31a38368b571ed16fae775d84",
     "semantic_hash": ""
   },
   "src/webgl/Textures.ts": {
@@ -216,9 +216,9 @@
     "semantic_hash": ""
   },
   "src/components/CinematicHUD.tsx": {
-    "mtime": 1789757522.0850298,
-    "seen": 1789757581.7639189,
-    "ast_hash": "e9d1f4f3d5e8c032c6abba579a2d5868",
+    "mtime": 1789757133.303957,
+    "seen": 1789757195.1490862,
+    "ast_hash": "bfb386bca78bc303ce3a4771e5fab8d6",
     "semantic_hash": ""
   },
   "brag-output/composition/hyperframes.json": {
