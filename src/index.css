@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+:root {
+  --font-serif: "Cinzel", "Times New Roman", Garamond, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --color-gold: #c5a059;
+  --color-gold-glow: rgba(197, 160, 89, 0.4);
+  --color-ember: #ff5500;
+  --color-cyan-rune: #4deeea;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: #06070a;
+  color: #f0f0f0;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(6, 7, 10, 0.85);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(197, 160, 89, 0.35);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(197, 160, 89, 0.7);
+}
+
+/* Mythic Glassmorphism Cards */
+.glass-panel {
+  background: rgba(10, 12, 18, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.7), 0 0 20px -5px rgba(197, 160, 89, 0.1);
+}
+
+.glass-panel-gold {
+  background: radial-gradient(circle at top left, rgba(30, 24, 16, 0.6), rgba(8, 10, 14, 0.75));
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(197, 160, 89, 0.22);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 235, 180, 0.15), 0 0 30px rgba(197, 160, 89, 0.08);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #ecd09f 50%, #c5a059 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cyan-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #a2f2ee 50%, #4deeea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#root {
+  width: 100%;
+  position: relative;
+}
+
+/* Explicit 650vh scroll track so mouse wheel and touch always have physical scroll space */
+.scroll-track {
+  width: 100%;
+  height: 650vh;
+  min-height: 650vh;
+  position: relative;
+  display: block;
+}
+
+/* Custom noise grain overlay for cinematic film feel */
+.cinematic-grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 20;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Vignette border */
+.cinematic-vignette {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 15;
+  background: radial-gradient(circle at center, transparent 40%, rgba(3, 4, 7, 0.75) 100%);
+}
+
+/* Screen shake container */
+.shake-active {
+  animation: impact-shake 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes impact-shake {
+  10%, 90% {
+    transform: translate3d(-3px, 4px, 0) rotate(-0.5deg);
+  }
+  20%, 80% {
+    transform: translate3d(5px, -3px, 0) rotate(0.8deg);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-6px, 6px, 0) rotate(-1deg);
+  }
+  40%, 60% {
+    transform: translate3d(6px, -4px, 0) rotate(0.6deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shake-active {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,320 @@
+{
+  ".oxlintrc.json": {
+    "mtime": 1789729579.2865188,
+    "seen": 1789730731.076716,
+    "ast_hash": "029f4905006c1fffd96bc863e2d98d3e",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1789730083.5735362,
+    "seen": 1789730731.076716,
+    "ast_hash": "a0faf89a31cc5d5be2eb205d7a382184",
+    "semantic_hash": ""
+  },
+  "src/App.tsx": {
+    "mtime": 1789744604.1767664,
+    "seen": 1789744764.2271533,
+    "ast_hash": "0613bf8cdac23c9c71401d4e9e01a250",
+    "semantic_hash": ""
+  },
+  "src/components/AudioMotionControls.tsx": {
+    "mtime": 1789730534.729838,
+    "seen": 1789730731.076716,
+    "ast_hash": "9ba3d2ab2dd36a89f949910ee56eb00f",
+    "semantic_hash": ""
+  },
+  "src/components/CanvasViewport.tsx": {
+    "mtime": 1789743618.072726,
+    "seen": 1789743762.8445292,
+    "ast_hash": "18fc7ef261566e12cee8f703cafc790e",
+    "semantic_hash": ""
+  },
+  "src/components/FinalCTA.tsx": {
+    "mtime": 1789743637.2766318,
+    "seen": 1789743762.8445292,
+    "ast_hash": "00d2a0feedc9e8eff7b0b5034af176d7",
+    "semantic_hash": ""
+  },
+  "src/components/NarrativeOverlay.tsx": {
+    "mtime": 1789743606.9453564,
+    "seen": 1789743762.8445292,
+    "ast_hash": "7ffb72f846beaa42b6ea98ab93cda54b",
+    "semantic_hash": ""
+  },
+  "src/components/ScreenShakeWrapper.tsx": {
+    "mtime": 1789730243.445194,
+    "seen": 1789730731.076716,
+    "ast_hash": "da76a836dc9f91b22bd6779fc8194303",
+    "semantic_hash": ""
+  },
+  "src/core/AnimationState.ts": {
+    "mtime": 1789744635.008907,
+    "seen": 1789744764.2271533,
+    "ast_hash": "6ec654b4ef16fc52cf8380900323f8a1",
+    "semantic_hash": ""
+  },
+  "src/main.tsx": {
+    "mtime": 1789729579.3268604,
+    "seen": 1789730731.076716,
+    "ast_hash": "787e5a07efeb2bf6209d5937195f2f68",
+    "semantic_hash": ""
+  },
+  "src/types/scene.ts": {
+    "mtime": 1789730120.2217214,
+    "seen": 1789730731.076716,
+    "ast_hash": "e45e726dec22c1c5d6a7123d499440f4",
+    "semantic_hash": ""
+  },
+  "src/utils/math.ts": {
+    "mtime": 1789730124.1018105,
+    "seen": 1789730731.076716,
+    "ast_hash": "f35dd77b726fd3ff46151031bc0ecb7e",
+    "semantic_hash": ""
+  },
+  "src/utils/sound.ts": {
+    "mtime": 1789744062.5461586,
+    "seen": 1789744278.8961284,
+    "ast_hash": "e8e2ea92632fdb48af80205cd7b50236",
+    "semantic_hash": ""
+  },
+  "src/webgl/Environment.ts": {
+    "mtime": 1789744547.0310047,
+    "seen": 1789744764.2271533,
+    "ast_hash": "722e78b856661ed436fd7ff6d99c9710",
+    "semantic_hash": ""
+  },
+  "src/webgl/LightingRig.ts": {
+    "mtime": 1789740745.851089,
+    "seen": 1789740850.3327422,
+    "ast_hash": "c921b74b043735c6d404b8fe80188e8c",
+    "semantic_hash": ""
+  },
+  "src/webgl/ParticleSystem.ts": {
+    "mtime": 1789744523.6391628,
+    "seen": 1789744764.2271533,
+    "ast_hash": "d270c6a602cf6146df18749de7e84eeb",
+    "semantic_hash": ""
+  },
+  "src/webgl/SceneManager.ts": {
+    "mtime": 1789744650.395648,
+    "seen": 1789744764.2271533,
+    "ast_hash": "d5d299311c4c2e42cebd3c1b5f84917c",
+    "semantic_hash": ""
+  },
+  "src/webgl/Shaders.ts": {
+    "mtime": 1789744007.6460614,
+    "seen": 1789744278.8961284,
+    "ast_hash": "f6b523baec9aedaaf16665f567a0e627",
+    "semantic_hash": ""
+  },
+  "src/webgl/SwordMesh.ts": {
+    "mtime": 1789743480.5695179,
+    "seen": 1789743762.8445292,
+    "ast_hash": "1455836d1721f016f1ad534cf120f59d",
+    "semantic_hash": ""
+  },
+  "src/webgl/Textures.ts": {
+    "mtime": 1789744506.1159966,
+    "seen": 1789744764.2271533,
+    "ast_hash": "a4204eb66630caa04e954b9629a78e35",
+    "semantic_hash": ""
+  },
+  "tsconfig.app.json": {
+    "mtime": 1789729579.3301537,
+    "seen": 1789730731.076716,
+    "ast_hash": "5f2dafd737dea8a4ddcbb10f5113ac5a",
+    "semantic_hash": ""
+  },
+  "tsconfig.json": {
+    "mtime": 1789729579.3311574,
+    "seen": 1789730731.076716,
+    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "semantic_hash": ""
+  },
+  "tsconfig.node.json": {
+    "mtime": 1789729579.3345435,
+    "seen": 1789730731.076716,
+    "ast_hash": "f9cb81ddcea69ffdab672fc8c48dca66",
+    "semantic_hash": ""
+  },
+  "vite.config.ts": {
+    "mtime": 1789730096.0473185,
+    "seen": 1789730731.076716,
+    "ast_hash": "d281d66c4390899f561fa3db9b8e9eac",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1789730718.3969543,
+    "seen": 1789730731.076716,
+    "ast_hash": "d5ffb42396383a2cf50e3814a6f6ec84",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1789743247.551931,
+    "seen": 1789743762.8445292,
+    "ast_hash": "fe4373e07d20a73dc7a076c65a3bf4d8",
+    "semantic_hash": ""
+  },
+  "public/favicon.svg": {
+    "mtime": 1789729579.295024,
+    "seen": 1789730731.076716,
+    "ast_hash": "7e840862161341271697daa99a40d76b",
+    "semantic_hash": ""
+  },
+  "public/icons.svg": {
+    "mtime": 1789729579.297967,
+    "seen": 1789730731.076716,
+    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
+    "semantic_hash": ""
+  },
+  "src/assets/hero.png": {
+    "mtime": 1789729579.3100908,
+    "seen": 1789730731.076716,
+    "ast_hash": "aead493361b27e7510691c5d7072dfc1",
+    "semantic_hash": ""
+  },
+  "src/assets/react.svg": {
+    "mtime": 1789729579.3147645,
+    "seen": 1789730731.076716,
+    "ast_hash": "f0402b67b6ce880f65666bb49e841696",
+    "semantic_hash": ""
+  },
+  "src/assets/vite.svg": {
+    "mtime": 1789729579.320918,
+    "seen": 1789730731.076716,
+    "ast_hash": "9960a24288958394ac50e57ff638b036",
+    "semantic_hash": ""
+  },
+  "ARCHITECTURE.md": {
+    "mtime": 1789730732.6066127,
+    "seen": 1789736780.7601364,
+    "ast_hash": "5bea94983b17672af93a8bfe08840bfc",
+    "semantic_hash": ""
+  },
+  "DECISIONS.md": {
+    "mtime": 1789730739.586171,
+    "seen": 1789736780.7601364,
+    "ast_hash": "22dcd9b0c694c9e335ddb069d777c374",
+    "semantic_hash": ""
+  },
+  "FEATURES.md": {
+    "mtime": 1789730722.4874828,
+    "seen": 1789736780.7601364,
+    "ast_hash": "464574a6bc2e169ca9dab49c68650b0f",
+    "semantic_hash": ""
+  },
+  "PAGES.md": {
+    "mtime": 1789730726.7396004,
+    "seen": 1789736780.7601364,
+    "ast_hash": "d1db33410ec736d51a121391793d5cba",
+    "semantic_hash": ""
+  },
+  "fantasy-dagger-meshi-ai-meshy-vs-supavoxel/textures/Color_575ed086-6717-4115-8081-a816837e9489_0.png": {
+    "mtime": 1789736919.0293283,
+    "seen": 1789738245.6744437,
+    "ast_hash": "d72f143dd66939e2f0b0ce9fb10aefd7",
+    "semantic_hash": ""
+  },
+  "fantasy-dagger-meshi-ai-meshy-vs-supavoxel/textures/NormalGL_575ed086-6717-4115-8081-a816837e9489_2.png": {
+    "mtime": 1789736919.0633278,
+    "seen": 1789738245.6744437,
+    "ast_hash": "be532bb089527732e4feb82898d6fbe5",
+    "semantic_hash": ""
+  },
+  "fantasy-dagger-meshi-ai-meshy-vs-supavoxel/textures/ORM_575ed086-6717-4115-8081-a816837e9489_1@channels=B.png": {
+    "mtime": 1789736919.078345,
+    "seen": 1789738245.6744437,
+    "ast_hash": "885e3518ad1dd06060927ace94b607aa",
+    "semantic_hash": ""
+  },
+  "fantasy-dagger-meshi-ai-meshy-vs-supavoxel/textures/ORM_575ed086-6717-4115-8081-a816837e9489_1@channels=G.png": {
+    "mtime": 1789736919.0903516,
+    "seen": 1789738245.6744437,
+    "ast_hash": "4f56fe0312f99944442f712607b4473e",
+    "semantic_hash": ""
+  },
+  "src/components/BladeForgeModal.tsx": {
+    "mtime": 1789744589.4061298,
+    "seen": 1789744764.2271533,
+    "ast_hash": "f6c2be42e94a21ebb81ff937597581ef",
+    "semantic_hash": ""
+  },
+  "src/components/CinematicHUD.tsx": {
+    "mtime": 1789743697.674405,
+    "seen": 1789743762.8445292,
+    "ast_hash": "73995435360f438b57d0766075390f82",
+    "semantic_hash": ""
+  },
+  "brag-output/composition/hyperframes.json": {
+    "mtime": 1789752616.0210419,
+    "seen": 1789753016.7272902,
+    "ast_hash": "9aba7af72c9a867a940b5ea847eb18da",
+    "semantic_hash": ""
+  },
+  "brag-output/composition/meta.json": {
+    "mtime": 1789752616.020043,
+    "seen": 1789753016.7272902,
+    "ast_hash": "71f481612c4d51c76127fd2856e24093",
+    "semantic_hash": ""
+  },
+  "brag-output/composition/package.json": {
+    "mtime": 1789752616.023041,
+    "seen": 1789753016.7272902,
+    "ast_hash": "ce656e901e9e1b084e9f5b4f1734b89f",
+    "semantic_hash": ""
+  },
+  "brag-output/brag-plan.md": {
+    "mtime": 1789752601.098017,
+    "seen": 1789753016.7272902,
+    "ast_hash": "3b06d2f4ad7e8678df2283d2962d6e41",
+    "semantic_hash": ""
+  },
+  "brag-output/composition-brief.md": {
+    "mtime": 1789752606.7705958,
+    "seen": 1789753016.7272902,
+    "ast_hash": "0453d1efb2bfcc2d9d5e1584e3beead1",
+    "semantic_hash": ""
+  },
+  "brag-output/composition/AGENTS.md": {
+    "mtime": 1789752457.5572515,
+    "seen": 1789753016.7272902,
+    "ast_hash": "b5c9f2fb30749b8abf9288f6d2f3bfb7",
+    "semantic_hash": ""
+  },
+  "brag-output/composition/CLAUDE.md": {
+    "mtime": 1789752457.5692647,
+    "seen": 1789753016.7272902,
+    "ast_hash": "b5c9f2fb30749b8abf9288f6d2f3bfb7",
+    "semantic_hash": ""
+  },
+  "brag-output/composition/index.html": {
+    "mtime": 1789752893.010651,
+    "seen": 1789753016.7272902,
+    "ast_hash": "d8f76573d27b3a38988dfa55679526ae",
+    "semantic_hash": ""
+  },
+  "brag-output/share-copy.txt": {
+    "mtime": 1789752983.6884167,
+    "seen": 1789753016.7272902,
+    "ast_hash": "66f6178a52c719c1a09c5ff7ae8ef25c",
+    "semantic_hash": ""
+  },
+  "brag-output/brag.jpg": {
+    "mtime": 1789752958.4033573,
+    "seen": 1789753016.7272902,
+    "ast_hash": "bd85f5569e26167b7265a0da90b20528",
+    "semantic_hash": ""
+  },
+  "brag-output/brag.mp4": {
+    "mtime": 1789752962.5367484,
+    "seen": 1789753016.7272902,
+    "ast_hash": "385c86a14006fc067029cab2b03d6678",
+    "semantic_hash": ""
+  },
+  "brag-output/composition/assets/music/track.mp3": {
+    "mtime": 1789723589.474045,
+    "seen": 1789753016.7272902,
+    "ast_hash": "8161d01395fe356fb0795e803dece7c8",
+    "semantic_hash": ""
+  }
+}

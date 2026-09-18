@@ -1,0 +1,36 @@
+﻿# X / Twitter Launch Copy
+═══════════════════════════════════════════════════════════════════════
+14,200 meters above bedrock. One blade falls into the abyss. 🗡️✨
+
+Built a 3D scrollytelling experience combining:
+• Procedural atmospheric shaders & dynamic speed-line particle fields
+• Real-time aerodynamics & flight telemetry
+• Interactive aiming: left-click & hold tracks directly toward your cursor
+• 3D Blade Forge drawer with 360° orbit and custom metallurgy shaders (Damascus, Celestial Gold, Void Obsidian, Crimson Frost)
+• Synthesized Web Audio wind dynamics matching fall velocity
+
+Stack: Three.js · React 19 · GSAP ScrollTrigger · Tailwind CSS
+
+Video generated with Hyperframes.
+
+#threejs #webgl #frontend #webdev #creativecoding #react #gsap #indiedev
+
+═══════════════════════════════════════════════════════════════════════
+# LinkedIn Launch Post
+═══════════════════════════════════════════════════════════════════════
+What happens when you combine 3D scrollytelling, WebGL shaders, and interactive aerospace telemetry into a single continuous web journey?
+
+Introducing "The Celestial Blade" — an interactive web experience where a legendary dagger plunges 14,200 meters through the stratosphere, storm canopy, and abyssal ruins until striking ancient bedrock.
+
+Key Technical Highlights:
+✦ 60 FPS PBR Render: Three.js physically-based materials with metallic Damascus steel, Celestial Gold, Void Obsidian, and Crimson Frost finishes.
+✦ Responsive Particle Physics: Dynamic speed-streak warp trails that react to descent velocity and deflect smoothly around the cursor.
+✦ Interactive Aiming Mechanics: Smooth interpolation allowing users to aim the razor tip directly forward on click-and-hold without losing scroll position.
+✦ Custom 3D Forge Drawer: An interactive 360-degree inspection drawer with full orbit controls and codex lore.
+✦ Zero Layout Shift Architecture: Seamless full-viewport canvas layered beneath glassmorphic telemetry cards.
+
+Composition and launch trailer rendered with Hyperframes.
+
+Built with Three.js, React 19, GSAP ScrollTrigger, and Web Audio API.
+
+#WebDevelopment #ThreeJS #CreativeCoding #UserExperience #FrontendEngineering #ReactJS #3DDesign

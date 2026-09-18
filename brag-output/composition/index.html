@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Celestial Blade — Brag Video</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #060913;
+        font-family: 'Inter', sans-serif;
+        color: #ffffff;
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: radial-gradient(circle at 50% 25%, #0f1a30 0%, #060913 70%, #030408 100%);
+      }
+
+      /* Cosmic Background & Starfield */
+      .star-bg {
+        position: absolute;
+        inset: 0;
+        background-image: 
+          radial-gradient(1.5px 1.5px at 120px 240px, #ffffff, rgba(0,0,0,0)),
+          radial-gradient(2px 2px at 360px 580px, #7df9ff, rgba(0,0,0,0)),
+          radial-gradient(1px 1px at 780px 180px, #ffd580, rgba(0,0,0,0)),
+          radial-gradient(2px 2px at 1120px 340px, #ffffff, rgba(0,0,0,0)),
+          radial-gradient(1.5px 1.5px at 1450px 720px, #7df9ff, rgba(0,0,0,0)),
+          radial-gradient(2.5px 2.5px at 1700px 190px, #ffd580, rgba(0,0,0,0)),
+          radial-gradient(1px 1px at 450px 920px, #ffffff, rgba(0,0,0,0)),
+          radial-gradient(2px 2px at 980px 850px, #7df9ff, rgba(0,0,0,0)),
+          radial-gradient(1.5px 1.5px at 1320px 960px, #ffffff, rgba(0,0,0,0));
+        background-repeat: repeat;
+        background-size: 800px 800px;
+        opacity: 0.85;
+      }
+
+      .nebula-glow {
+        position: absolute;
+        width: 1200px;
+        height: 1200px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(77, 238, 234, 0.12) 0%, rgba(189, 0, 255, 0.08) 45%, transparent 70%);
+        top: -300px;
+        left: 360px;
+        filter: blur(80px);
+        pointer-events: none;
+      }
+
+      .moon-halo {
+        position: absolute;
+        top: 80px;
+        right: 180px;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background: radial-gradient(circle, #f0fdfa 0%, #38bdf8 30%, rgba(56, 189, 248, 0.15) 60%, transparent 80%);
+        box-shadow: 0 0 60px rgba(56, 189, 248, 0.4);
+        opacity: 0.85;
+      }
+
+      /* Glass Panels */
+      .glass-card {
+        background: rgba(10, 15, 26, 0.88);
+        backdrop-filter: blur(24px);
+        border: 1px solid rgba(245, 158, 11, 0.35);
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(245, 158, 11, 0.15);
+        border-radius: 24px;
+      }
+
+      .gold-text {
+        background: linear-gradient(135deg, #ffffff 0%, #fef3c7 30%, #f59e0b 70%, #d97706 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .cyan-text {
+        background: linear-gradient(135deg, #e0f2fe 0%, #38bdf8 50%, #4deeea 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .font-serif {
+        font-family: 'Cinzel', serif;
+      }
+
+      .font-mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+
+      /* Vignette */
+      .vignette {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 50% 50%, transparent 55%, rgba(0, 0, 0, 0.75) 100%);
+        pointer-events: none;
+      }
+
+      /* Scene Containers */
+      .scene {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="18"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- Audio Track -->
+      <audio
+        id="bg-music"
+        data-start="0"
+        data-duration="18"
+        data-track-index="10"
+        data-volume="0.38"
+        src="assets/music/track.mp3"
+      ></audio>
+
+      <!-- Atmospheric Backdrop -->
+      <div class="star-bg"></div>
+      <div class="nebula-glow"></div>
+      <div class="moon-halo"></div>
+      <div class="vignette" style="z-index: 0;" data-layout-allow-occlusion="true"></div>
+
+      <!-- ======================================================= -->
+      <!-- SCENE 1: THE HOOK (0.0s -> 3.5s) -->
+      <!-- ======================================================= -->
+      <div id="scene-1" class="scene clip" data-start="0" data-duration="3.5" data-track-index="1" style="z-index: 10;">
+        <div id="scene-1-inner" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div class="flex items-center gap-3 px-5 py-2 rounded-full glass-card border-amber-500/40 mb-6" style="padding: 10px 24px; border-radius: 9999px;">
+            <span style="display:inline-block; width: 10px; height: 10px; border-radius: 50%; background: #f59e0b; box-shadow: 0 0 12px #f59e0b;"></span>
+            <span class="font-mono" style="font-size: 16px; letter-spacing: 0.3em; color: #fde68a; font-weight: 600;">ACT I &middot; HIGH HEAVENS DESCENT</span>
+          </div>
+
+          <div id="altitude-counter" class="font-mono" style="font-size: 110px; font-weight: 700; color: #38bdf8; text-shadow: 0 0 40px rgba(56, 189, 248, 0.6); letter-spacing: 0.05em; line-height: 1.1;">
+            14,200 M
+          </div>
+
+          <h1 class="font-serif gold-text" style="font-size: 64px; font-weight: 900; letter-spacing: 0.08em; margin-top: 16px; text-transform: uppercase;">
+            14,200 METERS ABOVE BEDROCK.
+          </h1>
+
+          <p style="font-size: 24px; color: #cbd5e1; font-weight: 300; letter-spacing: 0.05em; margin-top: 12px;">
+            A cinematic 3D scrollytelling plunge into the unknown.
+          </p>
+        </div>
+      </div>
+
+      <!-- ======================================================= -->
+      <!-- SCENE 2: HERO TITLE & 3D REVEAL (3.5s -> 7.5s) -->
+      <!-- ======================================================= -->
+      <div id="scene-2" class="scene clip" data-start="3.5" data-duration="4.0" data-track-index="2" style="z-index: 10;">
+        <div id="scene-2-inner" class="glass-card" style="padding: 60px 80px; text-align: center; max-width: 1200px; width: 90%;">
+          <div style="display: inline-block; padding: 6px 18px; border-radius: 9999px; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); margin-bottom: 20px;">
+            <span class="font-mono" style="font-size: 14px; letter-spacing: 0.3em; color: #fbbf24; text-transform: uppercase;">✦ THREE.JS &middot; REACT 19 &middot; GSAP SCROLLTRIGGER</span>
+          </div>
+
+          <h2 class="font-serif gold-text" style="font-size: 88px; font-weight: 900; letter-spacing: 0.04em; line-height: 1.05; text-transform: uppercase;">
+            CELESTIAL BLADE
+          </h2>
+
+          <h3 class="font-serif" style="font-size: 38px; font-weight: 700; color: #ffffff; margin-top: 18px; letter-spacing: 0.06em;">
+            FALL INTO THE UNKNOWN.
+          </h3>
+
+          <p style="font-size: 22px; color: #cbd5e1; font-weight: 300; margin-top: 16px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.5;">
+            Continuous vertical world progression &middot; Procedural cosmic shaders &middot; Zero layout shift
+          </p>
+
+          <div style="display: flex; justify-content: center; gap: 20px; margin-top: 36px;">
+            <div style="padding: 12px 24px; border-radius: 12px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12);">
+              <span class="font-mono" style="font-size: 14px; color: #38bdf8; font-weight: 600;">60 FPS PBR RENDER</span>
+            </div>
+            <div style="padding: 12px 24px; border-radius: 12px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12);">
+              <span class="font-mono" style="font-size: 14px; color: #fbbf24; font-weight: 600;">WEB AUDIO SYNTHESIS</span>
+            </div>
+            <div style="padding: 12px 24px; border-radius: 12px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12);">
+              <span class="font-mono" style="font-size: 14px; color: #4ade80; font-weight: 600;">DAMASCUS METALLURGY</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================================================= -->
+      <!-- SCENE 3: TELEMETRY & AIMING INTERACTION (7.5s -> 11.5s) -->
+      <!-- ======================================================= -->
+      <div id="scene-3" class="scene clip" data-start="7.5" data-duration="4.0" data-track-index="3" style="z-index: 10;">
+        <div id="scene-3-inner" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="text-align: center; margin-bottom: 30px;">
+            <span class="font-mono" style="font-size: 16px; letter-spacing: 0.3em; color: #38bdf8; text-transform: uppercase;">INTERACTIVE AERODYNAMICS</span>
+            <h2 class="font-serif" style="font-size: 56px; font-weight: 800; color: #ffffff; margin-top: 8px;">
+              REAL-TIME FLIGHT TELEMETRY
+            </h2>
+          </div>
+
+          <!-- 3 Telemetry Gauges -->
+          <div style="display: flex; gap: 32px; width: 1100px; justify-content: center;">
+            <div class="glass-card" style="flex: 1; padding: 36px 30px; text-align: center; border-color: rgba(56, 189, 248, 0.4);">
+              <span class="font-mono" style="font-size: 14px; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 8px;">ALTITUDE</span>
+              <div class="font-mono" style="font-size: 48px; font-weight: 700; color: #38bdf8;">5,800 M</div>
+              <span style="font-size: 14px; color: #94a3b8; margin-top: 8px; display: block;">Deep Canopy Approach</span>
+            </div>
+
+            <div class="glass-card" style="flex: 1; padding: 36px 30px; text-align: center; border-color: rgba(245, 158, 11, 0.4);">
+              <span class="font-mono" style="font-size: 14px; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 8px;">VELOCITY</span>
+              <div class="font-mono" style="font-size: 48px; font-weight: 700; color: #fbbf24;">740 KM/H</div>
+              <span style="font-size: 14px; color: #94a3b8; margin-top: 8px; display: block;">Terminal Acceleration</span>
+            </div>
+
+            <div class="glass-card" style="flex: 1; padding: 36px 30px; text-align: center; border-color: rgba(239, 68, 68, 0.4);">
+              <span class="font-mono" style="font-size: 14px; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 8px;">CORE TEMP</span>
+              <div class="font-mono" style="font-size: 48px; font-weight: 700; color: #f87171;">980&deg;C</div>
+              <span style="font-size: 14px; color: #94a3b8; margin-top: 8px; display: block;">Atmospheric Friction</span>
+            </div>
+          </div>
+
+          <!-- Interactive Aim Callout -->
+          <div class="glass-card" style="margin-top: 36px; padding: 18px 40px; border-radius: 9999px; display: flex; align-items: center; gap: 16px;">
+            <span style="width: 14px; height: 14px; border-radius: 50%; background: #4deeea; box-shadow: 0 0 16px #4deeea;"></span>
+            <span class="font-mono" style="font-size: 18px; color: #ffffff; font-weight: 600;">
+              LEFT-CLICK &amp; HOLD: RAZOR TIP ALIGNS DIRECTLY INTO YOUR EYES
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================================================= -->
+      <!-- SCENE 4: 3D BLADE FORGE DRAWER (11.5s -> 15.0s) -->
+      <!-- ======================================================= -->
+      <div id="scene-4" class="scene clip" data-start="11.5" data-duration="3.5" data-track-index="4" style="z-index: 10;">
+        <div id="scene-4-inner" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div style="text-align: center; margin-bottom: 24px;">
+            <span class="font-mono" style="font-size: 16px; letter-spacing: 0.3em; color: #fbbf24; text-transform: uppercase;">CUSTOMIZER DRAWER &middot; 3D ORBIT</span>
+            <h2 class="font-serif gold-text" style="font-size: 56px; font-weight: 800; margin-top: 6px;">
+              THE BLADE FORGE &amp; ARCHIVE
+            </h2>
+          </div>
+
+          <!-- 4 Finishes Cards -->
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; width: 1300px;">
+            <div class="glass-card" style="padding: 30px 24px; text-align: left;">
+              <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #2b303c, #4a5568); border: 2px solid #94a3b8; margin-bottom: 14px;"></div>
+              <h4 class="font-serif" style="font-size: 20px; font-weight: 700; color: #ffffff;">Damascus Steel</h4>
+              <p style="font-size: 14px; color: #94a3b8; margin-top: 8px; line-height: 1.4;">512-layer folded meteorite steel with alternating nickel-iron bands.</p>
+            </div>
+
+            <div class="glass-card" style="padding: 30px 24px; text-align: left; border-color: rgba(245, 158, 11, 0.6);">
+              <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #d97706, #fbbf24); border: 2px solid #f59e0b; margin-bottom: 14px; box-shadow: 0 0 15px #f59e0b;"></div>
+              <h4 class="font-serif" style="font-size: 20px; font-weight: 700; color: #fbbf24;">Celestial Gold</h4>
+              <p style="font-size: 14px; color: #94a3b8; margin-top: 8px; line-height: 1.4;">Polished solar brass alloy bathed in warm golden reflections.</p>
+            </div>
+
+            <div class="glass-card" style="padding: 30px 24px; text-align: left;">
+              <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #090a0f, #181c24); border: 2px solid #38bdf8; margin-bottom: 14px;"></div>
+              <h4 class="font-serif" style="font-size: 20px; font-weight: 700; color: #ffffff;">Void Obsidian</h4>
+              <p style="font-size: 14px; color: #94a3b8; margin-top: 8px; line-height: 1.4;">Deep black mirror-finished core absorbing ambient starlight.</p>
+            </div>
+
+            <div class="glass-card" style="padding: 30px 24px; text-align: left;">
+              <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #991b1b, #ef4444); border: 2px solid #ef4444; margin-bottom: 14px;"></div>
+              <h4 class="font-serif" style="font-size: 20px; font-weight: 700; color: #ffffff;">Crimson Frost</h4>
+              <p style="font-size: 14px; color: #94a3b8; margin-top: 8px; line-height: 1.4;">Glacial chilled blood-steel tempered in abyssal frost.</p>
+            </div>
+          </div>
+
+          <div style="margin-top: 28px; display: flex; gap: 24px; align-items: center;">
+            <span class="font-mono" style="font-size: 16px; color: #38bdf8; background: rgba(56, 189, 248, 0.1); padding: 8px 20px; border-radius: 8px; border: 1px solid rgba(56, 189, 248, 0.3);">
+              360&deg; FREE ORBIT ROTATION
+            </span>
+            <span class="font-mono" style="font-size: 16px; color: #fbbf24; background: rgba(251, 191, 36, 0.1); padding: 8px 20px; border-radius: 8px; border: 1px solid rgba(251, 191, 36, 0.3);">
+              ANATOMY SPECS &amp; CODEX LORE
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================================================= -->
+      <!-- SCENE 5: BEDROCK IMPACT & OUTRO (15.0s -> 18.0s) -->
+      <!-- ======================================================= -->
+      <div id="scene-5" class="scene clip" data-start="15.0" data-duration="3.0" data-track-index="5" style="z-index: 10;">
+        <div id="scene-5-inner" class="glass-card" style="padding: 70px 100px; text-align: center; max-width: 1100px;">
+          <span class="font-mono" style="font-size: 16px; letter-spacing: 0.35em; color: #f59e0b; text-transform: uppercase; font-weight: 700;">
+            ACT VI &middot; EMBEDDED REALM
+          </span>
+
+          <h2 class="font-serif gold-text" style="font-size: 76px; font-weight: 900; margin-top: 14px; text-transform: uppercase;">
+            THE JOURNEY ENDS HERE.
+          </h2>
+
+          <p style="font-size: 24px; color: #e2e8f0; font-weight: 300; margin-top: 16px; max-width: 750px; margin-left: auto; margin-right: auto; line-height: 1.5;">
+            Driven deep into ancient stone, the Celestial Blade rests.
+          </p>
+
+          <div style="margin-top: 40px; padding: 16px 36px; display: inline-block; border-radius: 12px; background: linear-gradient(135deg, #d97706, #f59e0b); color: #000000; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; font-size: 16px; box-shadow: 0 0 35px rgba(245, 158, 11, 0.5);">
+            EXPLORE LIVE AT 127.0.0.1:5173
+          </div>
+        </div>
+      </div>
+
+      <div class="vignette" data-layout-allow-occlusion="true" style="z-index: 0;"></div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+
+      // Scene 1: 0.0s -> 3.5s
+      tl.fromTo("#scene-1-inner", { opacity: 0, scale: 0.95 }, { opacity: 1, scale: 1.0, duration: 0.8, ease: "power2.out" }, 0);
+      
+      // Altitude countdown counter tween
+      const counterObj = { val: 14200 };
+      tl.to(counterObj, {
+        val: 10400,
+        duration: 2.8,
+        ease: "power1.inOut",
+        onUpdate: () => {
+          const el = document.getElementById("altitude-counter");
+          if (el) el.textContent = Math.round(counterObj.val).toLocaleString() + " M";
+        }
+      }, 0.2);
+
+      tl.to("#scene-1-inner", { opacity: 0, scale: 1.05, duration: 0.6, ease: "power2.in" }, 2.9);
+
+      // Scene 2: 3.5s -> 7.5s
+      tl.fromTo("#scene-2-inner", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 3.5);
+      tl.to("#scene-2-inner", { opacity: 0, y: -30, duration: 0.6, ease: "power2.in" }, 6.9);
+
+      // Scene 3: 7.5s -> 11.5s
+      tl.fromTo("#scene-3-inner", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1.0, duration: 0.7, ease: "back.out(1.2)" }, 7.5);
+      tl.to("#scene-3-inner", { opacity: 0, scale: 1.03, duration: 0.6, ease: "power2.in" }, 10.9);
+
+      // Scene 4: 11.5s -> 15.0s
+      tl.fromTo("#scene-4-inner", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 11.5);
+      tl.to("#scene-4-inner", { opacity: 0, y: -20, duration: 0.5, ease: "power2.in" }, 14.5);
+
+      // Scene 5: 15.0s -> 18.0s
+      tl.fromTo("#scene-5-inner", { opacity: 0, scale: 1.15 }, { opacity: 1, scale: 1.0, duration: 0.6, ease: "power3.out" }, 15.0);
+      tl.to("#scene-5-inner", { opacity: 1, duration: 2.4 }, 15.6); // hold through end
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
