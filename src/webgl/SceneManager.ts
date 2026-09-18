@@ -350,7 +350,7 @@ export class SceneManager {
     this.camera.position.y = targetY + breath + this.mouse.y * 0.2;
     this.camera.position.z = targetZ;
 
-    const mobileLookOffset = this.isMobile ? -0.45 : 0.0;
+    const mobileLookOffset = this.isMobile ? -0.22 : 0.0;
     this.camera.lookAt(0, lookAtY + mobileLookOffset, 0);
   }
 

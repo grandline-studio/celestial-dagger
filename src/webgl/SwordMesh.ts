@@ -180,7 +180,7 @@ export class SwordMesh {
       const interactivePosX = mouseX * 0.35 * mouseWeight;
 
       // Normal falling hover parameters positioned well below hero text
-      const baseY = this.isMobile ? -2.15 : -1.55;
+      const baseY = this.isMobile ? -1.72 : -1.55;
       const normalTargetY = baseY - progress * 0.45 + (mouseY * 0.18 * mouseWeight);
       const normalRotX = wobbleX + airDragTilt + interactiveX;
       const normalRotY = baseRotationY + interactiveY;

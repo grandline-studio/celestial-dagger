@@ -45,10 +45,10 @@ export const NarrativeOverlay: React.FC = () => {
   const card5Opacity = card5FadeIn * card5FadeOut;
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-10 flex flex-col justify-between p-4 sm:p-12 md:p-16">
+    <div className="fixed inset-0 pointer-events-none z-10 flex flex-col justify-between p-3 sm:p-12 md:p-16">
       {/* 1. HERO TITLE (Top Center) */}
       <div 
-        className="w-full text-center transition-opacity duration-75 pt-3 sm:pt-14 px-2 sm:px-0"
+        className="w-full text-center transition-opacity duration-75 pt-20 sm:pt-14 px-2 sm:px-0"
         style={{
           opacity: heroOpacity,
           transform: `translateY(${heroY}px)`,

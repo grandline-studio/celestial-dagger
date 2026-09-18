@@ -70,16 +70,16 @@ export const CinematicHUD: React.FC<CinematicHUDProps> = ({
   return (
     <>
       {/* Top Floating Cinematic HUD */}
-      <header className="fixed top-4 inset-x-4 md:inset-x-8 z-40 flex items-center justify-between pointer-events-none transition-all duration-300">
+      <header className="fixed top-3 sm:top-4 inset-x-3 sm:inset-x-4 md:inset-x-8 z-40 flex items-center justify-between pointer-events-none transition-all duration-300">
         {/* Left: Brand Identity & Current Act */}
         <div className="flex items-center gap-3 pointer-events-auto">
-          <div className="glass-panel px-4 py-2 rounded-xl flex items-center gap-3 border border-amber-500/20 shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
-            <span className="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse shadow-[0_0_10px_#f59e0b]" aria-hidden="true" />
+          <div className="glass-panel px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl flex items-center gap-2.5 sm:gap-3 border border-amber-500/20 shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
+            <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-amber-400 animate-pulse shadow-[0_0_10px_#f59e0b]" aria-hidden="true" />
             <div className="flex flex-col">
-              <span className="font-serif text-xs md:text-sm font-bold tracking-[0.2em] text-amber-200">
+              <span className="font-serif text-[11px] sm:text-xs md:text-sm font-bold tracking-[0.15em] sm:tracking-[0.2em] text-amber-200">
                 CELESTIAL BLADE
               </span>
-              <span className="text-[10px] font-mono uppercase tracking-wider text-neutral-400">
+              <span className="text-[9px] sm:text-[10px] font-mono uppercase tracking-wider text-neutral-400">
                 {act.replace('-', ' ')} &middot; {Math.round(progress * 100)}%
               </span>
             </div>
