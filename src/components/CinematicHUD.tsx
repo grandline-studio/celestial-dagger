@@ -181,20 +181,29 @@ export const CinematicHUD: React.FC<CinematicHUDProps> = ({
           progress >= 0.97 ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
         }`}
       >
-        <div className="glass-panel px-4 py-2 rounded-full border border-white/10 text-xs font-mono text-neutral-300 flex items-center gap-3 shadow-xl backdrop-blur-md">
+        <div className="glass-panel px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-white/10 text-[11px] sm:text-xs font-mono text-neutral-300 flex items-center gap-2 sm:gap-3 shadow-xl backdrop-blur-md max-w-[94vw] overflow-hidden">
           {isInspecting ? (
             <>
-              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true" />
-              <span className="text-cyan-300 font-semibold">360&deg; Orbit Active</span>
+              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping shrink-0" aria-hidden="true" />
+              <span className="text-cyan-300 font-semibold whitespace-nowrap">360&deg; Orbit</span>
               <span className="text-neutral-500">|</span>
-              <span className="text-neutral-400">Drag to inspect blade from any angle</span>
+              <span className="text-neutral-400 truncate">
+                <span className="sm:hidden">Swipe to inspect blade</span>
+                <span className="hidden sm:inline">Drag to inspect blade from any angle</span>
+              </span>
             </>
           ) : (
             <>
-              <Crosshair className="w-3.5 h-3.5 text-amber-400 animate-pulse" aria-hidden="true" />
-              <span className="text-amber-200 font-medium">Click &amp; Hold</span>
+              <Crosshair className="w-3.5 h-3.5 text-amber-400 animate-pulse shrink-0" aria-hidden="true" />
+              <span className="text-amber-200 font-medium whitespace-nowrap">
+                <span className="sm:hidden">Touch &amp; Hold</span>
+                <span className="hidden sm:inline">Click &amp; Hold</span>
+              </span>
               <span className="text-neutral-500">&middot;</span>
-              <span className="text-neutral-400">Aim razor tip directly towards you</span>
+              <span className="text-neutral-400 truncate">
+                <span className="sm:hidden">Aim blade</span>
+                <span className="hidden sm:inline">Aim razor tip directly towards you</span>
+              </span>
               <span className="text-neutral-500 hidden sm:inline">&middot;</span>
               <span className="text-neutral-500 hidden sm:inline">Move pointer to deflect particles</span>
             </>
