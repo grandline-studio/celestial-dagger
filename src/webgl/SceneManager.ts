@@ -34,13 +34,6 @@ export class SceneManager {
   private lastClientX = 0;
   private lastClientY = 0;
 
-  // Mobile and touch hold tracking
-  public isMobile = false;
-  private touchStartX = 0;
-  private touchStartY = 0;
-  private touchHoldTimer: any = null;
-  private isTouchAiming = false;
-
   // 3D pointer tracking for interactive particle repulsion
   private mouseRaycaster = new THREE.Raycaster();
   private planeZ0 = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0);
@@ -109,10 +102,6 @@ export class SceneManager {
     this.onMouseMove = this.onMouseMove.bind(this);
     this.onMouseDown = this.onMouseDown.bind(this);
     this.onMouseUp = this.onMouseUp.bind(this);
-    this.onTouchStart = this.onTouchStart.bind(this);
-    this.onTouchMove = this.onTouchMove.bind(this);
-    this.onTouchEnd = this.onTouchEnd.bind(this);
-    this.onDeviceOrientation = this.onDeviceOrientation.bind(this);
     this.onWindowScroll = this.onWindowScroll.bind(this);
 
     window.addEventListener('resize', this.onResize);
@@ -120,17 +109,7 @@ export class SceneManager {
     window.addEventListener('mousedown', this.onMouseDown);
     window.addEventListener('mouseup', this.onMouseUp);
     window.addEventListener('mouseleave', this.onMouseUp);
-    window.addEventListener('touchstart', this.onTouchStart, { passive: true });
-    window.addEventListener('touchmove', this.onTouchMove, { passive: true });
-    window.addEventListener('touchend', this.onTouchEnd, { passive: true });
-    window.addEventListener('touchcancel', this.onTouchEnd, { passive: true });
-    if (typeof window !== 'undefined' && 'DeviceOrientationEvent' in window) {
-      window.addEventListener('deviceorientation', this.onDeviceOrientation, { passive: true });
-    }
     window.addEventListener('scroll', this.onWindowScroll, { passive: true });
-
-    // Initial responsive setup
-    this.onResize();
 
     // 6. Start Render Loop
     this.renderLoop = this.renderLoop.bind(this);
@@ -211,90 +190,9 @@ export class SceneManager {
     }
   }
 
-  private onTouchStart(e: TouchEvent) {
-    if (this.isReducedMotion || e.touches.length === 0) return;
-    const touch = e.touches[0];
-    this.touchStartX = touch.clientX;
-    this.touchStartY = touch.clientY;
-    this.lastClientX = touch.clientX;
-    this.lastClientY = touch.clientY;
-
-    this.mouse.targetX = (touch.clientX / window.innerWidth - 0.5) * 2;
-    this.mouse.targetY = -(touch.clientY / window.innerHeight - 0.5) * 2;
-
-    if (this.touchHoldTimer) clearTimeout(this.touchHoldTimer);
-    this.touchHoldTimer = setTimeout(() => {
-      if (this.progress < 0.97 && !this.sword.isInspecting) {
-        this.isLeftClicking = true;
-        this.isTouchAiming = true;
-        soundManager.triggerBladeAimChime();
-        if (typeof navigator !== 'undefined' && navigator.vibrate) {
-          try { navigator.vibrate(25); } catch { /* ignore */ }
-        }
-      }
-    }, 180);
-  }
-
-  private onTouchMove(e: TouchEvent) {
-    if (e.touches.length === 0) return;
-    const touch = e.touches[0];
-    const dx = touch.clientX - this.touchStartX;
-    const dy = touch.clientY - this.touchStartY;
-    const dist = Math.sqrt(dx * dx + dy * dy);
-
-    if (this.sword.isInspecting) {
-      const deltaX = touch.clientX - this.lastClientX;
-      const deltaY = touch.clientY - this.lastClientY;
-      this.lastClientX = touch.clientX;
-      this.lastClientY = touch.clientY;
-      this.sword.addOrbitDrag(deltaX, deltaY);
-      return;
-    }
-
-    if (!this.isTouchAiming && dist > 14) {
-      if (this.touchHoldTimer) {
-        clearTimeout(this.touchHoldTimer);
-        this.touchHoldTimer = null;
-      }
-    }
-
-    this.mouse.targetX = (touch.clientX / window.innerWidth - 0.5) * 2;
-    this.mouse.targetY = -(touch.clientY / window.innerHeight - 0.5) * 2;
-    this.lastClientX = touch.clientX;
-    this.lastClientY = touch.clientY;
-  }
-
-  private onTouchEnd() {
-    if (this.touchHoldTimer) {
-      clearTimeout(this.touchHoldTimer);
-      this.touchHoldTimer = null;
-    }
-    if (this.isTouchAiming) {
-      this.isTouchAiming = false;
-      this.isLeftClicking = false;
-    }
-  }
-
-  private onDeviceOrientation(e: DeviceOrientationEvent) {
-    if (this.isReducedMotion || !this.isMobile || this.isTouchAiming) return;
-    if (e.gamma !== null && e.beta !== null) {
-      const gamma = clamp(e.gamma, -30, 30) / 30;
-      const beta = clamp(e.beta - 45, -30, 30) / 30;
-      this.mouse.targetX = gamma * 0.75;
-      this.mouse.targetY = -beta * 0.5;
-    }
-  }
-
   private onResize() {
     const width = window.innerWidth;
     const height = window.innerHeight;
-    const isMobile = width < 768;
-    this.isMobile = isMobile;
-    if (this.sword) {
-      this.sword.setIsMobile(isMobile);
-    }
-
-    this.camera.fov = isMobile ? 50 : 45;
     this.camera.aspect = width / height;
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(width, height);
@@ -339,17 +237,9 @@ export class SceneManager {
     } else {
       // Impact & Settled state: low ground angle looking up at embedded blade
       const t = smoothstep(0.97, 1.0, this.progress);
-      if (this.isMobile) {
-        // On mobile, frame the embedded blade higher up with wide perspective so the entire hilt,
-        // crossguard, and bedrock impact fracture lines stay above the final CTA drawer
-        targetY = mapRange(t, 0, 1, -1.0, -1.15);
-        targetZ = mapRange(t, 0, 1, 4.8, 4.6);
-        lookAtY = mapRange(t, 0, 1, -1.8, -1.72);
-      } else {
-        targetY = mapRange(t, 0, 1, -1.3, -1.55);
-        targetZ = mapRange(t, 0, 1, 4.8, 4.2);
-        lookAtY = mapRange(t, 0, 1, -2.0, -2.15);
-      }
+      targetY = mapRange(t, 0, 1, -1.3, -1.55);
+      targetZ = mapRange(t, 0, 1, 4.8, 4.2);
+      lookAtY = mapRange(t, 0, 1, -2.0, -2.15);
     }
 
     // Subtle breath oscillation when not impacted
@@ -358,8 +248,7 @@ export class SceneManager {
     this.camera.position.y = targetY + breath + this.mouse.y * 0.2;
     this.camera.position.z = targetZ;
 
-    const mobileLookOffset = (this.isMobile && this.progress < 0.97) ? -0.22 : 0.0;
-    this.camera.lookAt(0, lookAtY + mobileLookOffset, 0);
+    this.camera.lookAt(0, lookAtY, 0);
   }
 
   private updateFog() {
@@ -397,9 +286,9 @@ export class SceneManager {
     this.velocity *= 0.88;
 
     // Dagger interaction is active ONLY when user is NOT actively scrolling
-    // and blade is not impacted into ground (touch-aiming bypasses scroll delay)
+    // and blade is not impacted into ground
     const isActivelyScrolling = (now - this.lastScrollTime) < 160;
-    const targetWeight = (!this.isTouchAiming && isActivelyScrolling) || this.progress >= 0.97 || this.isReducedMotion ? 0.0 : 1.0;
+    const targetWeight = (isActivelyScrolling || this.progress >= 0.97 || this.isReducedMotion) ? 0.0 : 1.0;
 
     // Smoothly ease mouse interaction in/out (~100ms responsive interpolation)
     this.mouseWeight += (targetWeight - this.mouseWeight) * 0.12;
@@ -443,22 +332,11 @@ export class SceneManager {
     if (this.animFrameId !== null) {
       cancelAnimationFrame(this.animFrameId);
     }
-    if (this.touchHoldTimer) {
-      clearTimeout(this.touchHoldTimer);
-      this.touchHoldTimer = null;
-    }
     window.removeEventListener('resize', this.onResize);
     window.removeEventListener('mousemove', this.onMouseMove);
     window.removeEventListener('mousedown', this.onMouseDown);
     window.removeEventListener('mouseup', this.onMouseUp);
     window.removeEventListener('mouseleave', this.onMouseUp);
-    window.removeEventListener('touchstart', this.onTouchStart);
-    window.removeEventListener('touchmove', this.onTouchMove);
-    window.removeEventListener('touchend', this.onTouchEnd);
-    window.removeEventListener('touchcancel', this.onTouchEnd);
-    if (typeof window !== 'undefined' && 'DeviceOrientationEvent' in window) {
-      window.removeEventListener('deviceorientation', this.onDeviceOrientation);
-    }
     window.removeEventListener('scroll', this.onWindowScroll);
     if (this.renderer.domElement.parentElement) {
       this.renderer.domElement.parentElement.removeChild(this.renderer.domElement);

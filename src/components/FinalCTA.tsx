@@ -29,28 +29,28 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onOpenForge }) => {
 
   return (
     <div 
-      className="fixed inset-x-0 bottom-0 z-30 flex flex-col items-center justify-end pb-3 sm:pb-8 px-3 sm:px-8 pointer-events-auto transition-all duration-150"
+      className="fixed inset-x-0 bottom-0 z-30 flex flex-col items-center justify-end pb-8 px-4 sm:px-8 pointer-events-auto transition-all duration-150"
       style={{
         opacity: ctaOpacity,
         transform: `translateY(${translateY}px)`
       }}
     >
-      <div className="w-full max-w-2xl bg-neutral-950/90 backdrop-blur-xl border border-amber-500/30 p-4 sm:p-10 rounded-xl sm:rounded-2xl shadow-[0_10px_50px_rgba(0,0,0,0.9)] text-center">
-        <span className="inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.25em] sm:tracking-[0.3em] text-amber-400 mb-1.5 sm:mb-3">
-          <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5" aria-hidden="true" />
+      <div className="w-full max-w-2xl bg-neutral-950/85 backdrop-blur-xl border border-amber-500/30 p-6 sm:p-10 rounded-2xl shadow-[0_10px_50px_rgba(0,0,0,0.9)] text-center">
+        <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.3em] text-amber-400 mb-3">
+          <Sparkles className="w-3.5 h-3.5" aria-hidden="true" />
           ACT VI &middot; EMBEDDED REALM
         </span>
 
-        <h2 className="text-xl sm:text-5xl font-black text-white font-[var(--font-serif)] tracking-tight leading-tight">
+        <h2 className="text-3xl sm:text-5xl font-black text-white font-[var(--font-serif)] tracking-tight">
           THE JOURNEY ENDS HERE.
         </h2>
 
-        <p className="mt-1.5 sm:mt-3 text-xs sm:text-base text-neutral-300 font-light max-w-lg mx-auto line-clamp-2 sm:line-clamp-none">
+        <p className="mt-3 text-sm sm:text-base text-neutral-300 font-light max-w-lg mx-auto">
           Driven deep into ancient stone, the Celestial Blade rests. Its etched runes smolder with molten twilight.
         </p>
 
         {/* Action Buttons */}
-        <div className="mt-3.5 sm:mt-8 grid grid-cols-2 sm:flex sm:flex-row items-center justify-center gap-2 sm:gap-4">
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             onClick={() => {
               if (onOpenForge) {
@@ -59,56 +59,50 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onOpenForge }) => {
                 setShowSpecs(!showSpecs);
               }
             }}
-            className="w-full sm:w-auto min-h-[42px] sm:min-h-[48px] px-3 sm:px-8 py-2.5 sm:py-3.5 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-neutral-950 font-semibold tracking-wider uppercase text-[11px] sm:text-xs transition-all shadow-[0_0_25px_rgba(245,158,11,0.4)] flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer active:scale-95"
+            className="w-full sm:w-auto min-h-[48px] px-8 py-3.5 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-neutral-950 font-semibold tracking-wider uppercase text-xs transition-all shadow-[0_0_25px_rgba(245,158,11,0.4)] flex items-center justify-center gap-2 cursor-pointer active:scale-95"
             aria-expanded={showSpecs}
           >
-            <Shield className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" aria-hidden="true" />
-            <span>
-              <span className="sm:hidden">Blade &amp; Forge</span>
-              <span className="hidden sm:inline">Explore the Blade &amp; Forge</span>
-            </span>
+            <Shield className="w-4 h-4" aria-hidden="true" />
+            Explore the Blade &amp; Forge
           </button>
 
           <button
             onClick={scrollToTop}
-            className="w-full sm:w-auto min-h-[42px] sm:min-h-[48px] px-3 sm:px-8 py-2.5 sm:py-3.5 rounded-lg bg-white/5 hover:bg-white/10 text-neutral-200 border border-white/15 font-medium tracking-wider uppercase text-[11px] sm:text-xs transition-all flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer active:scale-95"
+            className="w-full sm:w-auto min-h-[48px] px-8 py-3.5 rounded-lg bg-white/5 hover:bg-white/10 text-neutral-200 border border-white/15 font-medium tracking-wider uppercase text-xs transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-95"
           >
-            <ArrowUp className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" aria-hidden="true" />
-            <span>
-              <span className="sm:hidden">Ascend</span>
-              <span className="hidden sm:inline">Ascend Once More</span>
-            </span>
+            <ArrowUp className="w-4 h-4" aria-hidden="true" />
+            Ascend Once More
           </button>
         </div>
 
         {/* Expandable Specifications Card */}
         {showSpecs && (
-          <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4 text-left animate-in fade-in slide-in-from-bottom-2 duration-300">
-            <div className="p-2.5 sm:p-3 bg-white/5 rounded-lg">
-              <span className="text-[9px] sm:text-[10px] text-neutral-400 uppercase tracking-wider block">Total Length</span>
-              <span className="text-xs sm:text-sm font-semibold text-amber-200 font-mono">118.5 cm</span>
+          <div className="mt-6 pt-6 border-t border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left animate-in fade-in slide-in-from-bottom-2 duration-300">
+            <div className="p-3 bg-white/5 rounded-lg">
+              <span className="text-[10px] text-neutral-400 uppercase tracking-wider block">Total Length</span>
+              <span className="text-sm font-semibold text-amber-200 font-mono">118.5 cm</span>
             </div>
-            <div className="p-2.5 sm:p-3 bg-white/5 rounded-lg">
-              <span className="text-[9px] sm:text-[10px] text-neutral-400 uppercase tracking-wider block">Metallurgy</span>
-              <span className="text-xs sm:text-sm font-semibold text-amber-200 font-mono">Folded Damascus</span>
+            <div className="p-3 bg-white/5 rounded-lg">
+              <span className="text-[10px] text-neutral-400 uppercase tracking-wider block">Metallurgy</span>
+              <span className="text-sm font-semibold text-amber-200 font-mono">Folded Damascus</span>
             </div>
-            <div className="p-2.5 sm:p-3 bg-white/5 rounded-lg">
-              <span className="text-[9px] sm:text-[10px] text-neutral-400 uppercase tracking-wider block">Crossguard</span>
-              <span className="text-xs sm:text-sm font-semibold text-amber-200 font-mono">Cast Bronze</span>
+            <div className="p-3 bg-white/5 rounded-lg">
+              <span className="text-[10px] text-neutral-400 uppercase tracking-wider block">Crossguard</span>
+              <span className="text-sm font-semibold text-amber-200 font-mono">Cast Bronze</span>
             </div>
-            <div className="p-2.5 sm:p-3 bg-white/5 rounded-lg">
-              <span className="text-[9px] sm:text-[10px] text-neutral-400 uppercase tracking-wider block">Enchantment</span>
-              <span className="text-xs sm:text-sm font-semibold text-amber-200 font-mono">Elder Futhark</span>
+            <div className="p-3 bg-white/5 rounded-lg">
+              <span className="text-[10px] text-neutral-400 uppercase tracking-wider block">Enchantment</span>
+              <span className="text-sm font-semibold text-amber-200 font-mono">Elder Futhark</span>
             </div>
           </div>
         )}
 
         {/* Clean minimal footer credit */}
-        <div className="mt-3 sm:mt-8 pt-2.5 sm:pt-4 border-t border-white/5 flex flex-row items-center justify-between text-[9px] sm:text-[11px] text-neutral-500">
-          <span>CINEMATIC THREE.JS &middot; GSAP</span>
+        <div className="mt-8 pt-4 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-[11px] text-neutral-500 gap-2">
+          <span>CINEMATIC THREE.JS &middot; GSAP SCROLLTRIGGER</span>
           <span className="flex items-center gap-1">
-            <Compass className="w-2.5 h-2.5 sm:w-3 sm:h-3" aria-hidden="true" />
-            Grandline Studio
+            <Compass className="w-3 h-3" aria-hidden="true" />
+            Grandline Studio Engineering
           </span>
         </div>
       </div>
